@@ -51,7 +51,7 @@ export default function Home() {
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
 					¡Hola mundo!
 				</h2>
-				<p className="text-gray-300 mb-4">
+				<p className="text-gray-300 mb-6">
 					Soy un desarrollador frontend e ingeniero de software enfocado en
 					crear experiencias digitales excepcionales. Me apasiona transformar
 					ideas en productos funcionales, optimizando cada detalle para ofrecer

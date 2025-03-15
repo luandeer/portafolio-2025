@@ -1,5 +1,6 @@
 import { PawPrint } from 'lucide-react';
 import Link from 'next/link';
+import { NavLinks } from './Nav';
 
 export const Header = () => {
 	return (
@@ -10,10 +11,7 @@ export const Header = () => {
 					telmoalexander.
 				</Link>
 				<nav>
-					<ul className="hidden md:flex items-center gap-10 ">
-						<li>proyectos</li>
-						<li>guestbook</li>
-					</ul>
+					<NavLinks />
 					<button className="block md:hidden"> menú</button>
 				</nav>
 			</div>

@@ -5,7 +5,7 @@ export default function ButtonPortafolio() {
 	return (
 		<div className="flex items-center justify-center  ">
 			<Link
-				href="/portfolio"
+				href="/proyectos"
 				className="
           group
           relative
