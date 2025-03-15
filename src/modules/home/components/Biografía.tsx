@@ -30,9 +30,7 @@ export default function Biography() {
 						key={index}
 						className="grid grid-cols-[70px_1fr] gap-2  py-1.5 md:grid-cols-[80px_1fr]"
 					>
-						<div className="text-sm font-bold text-white md:text-base">
-							{event.year}
-						</div>
+						<div className="text-sm font-bold text-white ">{event.year}</div>
 						<div className="text-sm text-gray-300 md:text-base">
 							{event.description}
 						</div>

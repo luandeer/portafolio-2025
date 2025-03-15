@@ -1,4 +1,4 @@
-import Banner from '@/common/banner';
+// import { Banner1 } from '@/common/components/Banner';
 import {
 	Avatar,
 	AvatarFallback,
@@ -7,36 +7,39 @@ import {
 import Biography from '@/modules/home/components/Biografía';
 import ButtonPortafolio from '@/modules/home/components/ButtonPortafolio';
 import { CarouselCertifications } from '@/modules/home/components/Certifications';
+import Education from '@/modules/home/components/Education';
+import Experiencie from '@/modules/home/components/Experiencie';
 import SocialMediaLinks from '@/modules/home/components/Social';
 import { BadgeCheck, Cake, Luggage } from 'lucide-react';
-
 export default function Home() {
 	return (
-		<main className=" ">
-			<Banner />
-			<div className="flex items-start justify-between w-full mt-10 max-w-[700px] mx-auto mb-10">
+		<main className=" max-lg:px-4">
+			{/* <Banner1 /> */}
+
+			<div className="flex flex-col-reverse gap-2 md:gap-0 md:flex-row items-start justify-between w-full mt-10 max-w-[700px] mx-auto mb-10">
 				<div className="flex-1 space-y-1 w-full">
-					<h1 className="font-bold text-4xl text-white  leading-none flex items-end gap-2">
-						<span className="leading-none">Alexander Perez</span>
+					<h1 className="font-bold text-3xl md:text-4xl text-white  leading-none flex items-end gap-2">
+						<span className="leading-none">Telmo Alexander</span>
 						<span>
 							<BadgeCheck />
 						</span>
 					</h1>
 
-					<p className="max-w-[700px] text-gray-300 mb-4">
-						Frontend Developer. Software Engineering. Content Creator.
+					<p className="max-w-[700px] text-sm md:text-base text-gray-300 mb-4">
+						Frontend Developer. Software Engineering.
 					</p>
-					<div className="flex items-center gap-4">
-						<span className="flex items-center gap-1 text-gray-300">
-							<Luggage /> Disponible (pero con café ☕)
+					<div className="flex flex-wrap items-center gap-2 md:gap-4">
+						<span className="flex items-center gap-1 text-sm md:text-base text-gray-300">
+							<Luggage className="size-5 md:size-6" /> Disponible (pero con café
+							☕)
 						</span>
 						<SocialMediaLinks displayMode="mobile" />
-						<span className="flex items-center gap-1 text-gray-300">
-							<Cake /> 7 de abril
+						<span className="flex items-center gap-1 text-sm md:text-base text-gray-300">
+							<Cake className="size-5 md:size-6" /> 7 de abril
 						</span>
 					</div>
 				</div>
-				<Avatar className="size-32 border border-white">
+				<Avatar className="size-28 md:size-32 border border-white">
 					<AvatarImage src="/me.jpg" alt="@shadcn" />
 					<AvatarFallback></AvatarFallback>
 				</Avatar>
@@ -79,8 +82,26 @@ export default function Home() {
 				</p>
 			</div>
 
+			{/* Education */}
+
+			<div className="max-w-[700px] mx-auto text-white mb-10">
+				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
+					Experiencia
+				</h2>
+				<Experiencie />
+			</div>
+
+			{/* Education */}
+
+			<div className="max-w-[700px] mx-auto text-white mb-10">
+				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
+					Educación
+				</h2>
+				<Education />
+			</div>
+
 			{/* Certifications*/}
-			<div className="max-w-[700px] mx-auto text-white mb-10 w-full">
+			<div className="max-w-[700px] mx-auto text-white mb-10 w-full overflow-hidden">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-6">
 					Certificaciones
 				</h2>

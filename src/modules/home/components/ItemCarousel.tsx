@@ -34,20 +34,18 @@ export default function CertificateCard({
 
 	return (
 		<Dialog open={isOpen} onOpenChange={setIsOpen}>
-			<DialogTrigger asChild>
-				<button>
-					<div className="overflow-hidden cursor-pointer h-[170px]  transition-all duration-300 hover:shadow-xl border-2 group rounded-lg bg-gradient-to-b from-white to-gray-50">
-						<div className="p-0">
-							<div className="relative aspect-video overflow-hidden border-b flex-col  ">
+			<DialogTrigger asChild className="ring-0 focus:ring-0 focus:outline-none">
+				<button className="w-full" onPointerDown={(e) => e.preventDefault()}>
+					<div className=" cursor-pointer w-full aspect-video  group rounded-lg bg-gray-800">
+						<div className="px-4 pt-4 pb-2 ">
+							<div className="relative aspect-video  overflow-hidden w-full h-full rounded-t-md  flex-col  ">
 								<Image
 									src={imageUrl || '/placeholder.svg'}
 									alt={alt}
-									width={200}
-									height={200}
-									className="object-cover transition-all duration-300 group-hover:scale-105"
+									fill
+									className="object-cover w-full h-full transition-all duration-300 group-hover:scale-105 will-change-transform"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-								{/* Icono de zoom al hacer hover */}
 								<div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 ease-out">
 									<div className="bg-black/30  p-3 rounded-full transform scale-50 group-hover:scale-100 transition-all duration-300 ease-out">
 										<ZoomIn className="h-6 w-6 text-white" />
@@ -55,10 +53,10 @@ export default function CertificateCard({
 								</div>
 							</div>
 
-							<div className="p-1 ">
+							<div className="pt-2 ">
 								<div className="flex items-start gap-1.5 ">
-									<Award className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-									<h3 className="font-semibold text-sm text-start leading-tight text-gray-700 line-clamp-2">
+									<Award className="h-5 w-5 text-gray-100 mt-1 flex-shrink-0" />
+									<h3 className="font-medium text-sm text-start leading-tight text-gray-100 line-clamp-2 max-w-[125px]">
 										{title}
 									</h3>
 								</div>
@@ -67,43 +65,41 @@ export default function CertificateCard({
 					</div>
 				</button>
 			</DialogTrigger>
-			<DialogContent className="!max-w-[95vw] !w-[95vw] !max-h-[95vh] p-0 border-0 rounded-lg overflow-hidden bg-[#f8f9fa] dark:bg-gray-900">
+			<DialogContent className="lg:!max-w-[75vw] max-w-[95vw] w-[95vw] lg:!w-[75vw] !max-h-[95vh] p-0 !border-none rounded-lg overflow-hidden bg-transparent ">
 				<DialogHeader className="hidden">
 					<DialogTitle>Edit profile</DialogTitle>
 					<DialogDescription>
 						Make changes to your profile here. Click save when youre done.
 					</DialogDescription>
 				</DialogHeader>
-				<div className="relative w-full h-[90vh] flex flex-col ">
-					<div className="bg-blue-900 text-primary-foreground px-6 py-4 flex items-center justify-between">
+				<div className="relative w-full h-full flex flex-col ">
+					<div className="bg-gray-900 text-primary-foreground px-6 py-4 flex items-center justify-between">
 						<div className="flex items-center gap-2">
 							<Award className="h-6 w-6" />
-							<h2 className="text-xl font-semibold tracking-tight">{title}</h2>
+							<h2 className="md:text-xl font-semibold line-clamp-1">{title}</h2>
 						</div>
-						<div className="flex items-center gap-2">
-							<Button
-								variant="ghost"
-								size="icon"
-								className="rounded-full hover:bg-primary-foreground/10 hover:text-white"
-								onClick={() => setIsOpen(false)}
-							>
-								<X className="h-5 w-5" />
-							</Button>
-						</div>
+						<Button
+							variant="ghost"
+							size="icon"
+							className="rounded-full hover:bg-primary-foreground/10 hover:text-white cursor-pointer"
+							onClick={() => setIsOpen(false)}
+						>
+							<X className="h-5 w-5" />
+						</Button>
 					</div>
 
-					<div className="flex-1 overflow-auto p-6 flex flex-col md:flex-row gap-6">
-						<div className="relative w-full  h-[60vh] md:h-full border border-gray-200 dark:border-gray-700 rounded-lg shadow bg-white dark:bg-gray-800">
+					<div className="flex-1 overflow-auto p-6 flex flex-col lg:flex-row gap-6  lg:justify-center bg-[#f8f9fa]">
+						<div className="relative w-full max-w-[1000px]  aspect-video overflow-hidden  border border-gray-200 dark:border-gray-700 rounded-lg shadow bg-white dark:bg-gray-800">
 							<Image
 								src={imageUrl || '/placeholder.svg'}
 								alt={alt}
 								fill
-								className="object-contain w-full"
+								className="object-fill "
 							/>
 						</div>
 
-						<div className="w-full md:w-1/4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-700">
-							<h3 className="font-bold text-lg mb-4">
+						<div className="w-full lg:w-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+							<h3 className="font-semibold text-lg mb-4">
 								Detalles del Certificado
 							</h3>
 

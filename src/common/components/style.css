@@ -1,0 +1,355 @@
+.outer-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo-container {
+	width: 100%;
+	background: #ababab;
+	margin: 0 0 30px;
+	position: relative;
+}
+
+.the-great-outdoors {
+	background: linear-gradient(to bottom, #264fbf 0%, #82c0f2 100%);
+	height: 100px;
+	overflow: hidden;
+}
+.the-great-outdoors .logo-text {
+	color: white;
+	font-size: 1.85rem;
+	font-family: 'Black Han Sans', sans-serif;
+	margin: 20px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 600;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.the-great-outdoors .grass {
+	background: #11933d;
+	height: 25px;
+	position: absolute;
+	top: 70px;
+	z-index: 499;
+}
+.the-great-outdoors .ground {
+	background: linear-gradient(to bottom, #8e5505 0%, #5b3500 100%);
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	z-index: 500;
+}
+
+.tree-group-1,
+.tree-group-2 {
+	position: relative;
+}
+
+.tree-group-1 .back-tree {
+	top: 31px;
+	left: 30px;
+}
+.tree-group-1 .left-tree {
+	top: 40px;
+	left: 19px;
+}
+.tree-group-1 .right-tree {
+	top: 47px;
+	left: 40px;
+}
+
+.tree-group-2 {
+	left: 93%;
+}
+.tree-group-2 .back-tree {
+	top: 31px;
+}
+.tree-group-2 .left-tree {
+	top: 40px;
+	left: -15px;
+}
+.tree-group-2 .right-tree {
+	top: 47px;
+	left: 5px;
+}
+
+.back-tree {
+	transform: scale(4);
+	color: #034419;
+	position: absolute;
+}
+
+.left-tree {
+	transform: scale(3);
+	position: absolute;
+	color: #056d28;
+}
+
+.right-tree {
+	transform: scale(2);
+	color: #11933d;
+	position: absolute;
+}
+
+.mountain-1,
+.mountain-2,
+.mountain-3,
+.mountain-4 {
+	border-radius: 6px;
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	background: #492b17;
+	transform: rotate(45deg);
+}
+
+.mountain-1 {
+	top: 70px;
+	background: #492b17;
+}
+
+.mountain-2 {
+	top: 60px;
+	left: 60px;
+	background: #687691;
+}
+
+.mountain-3 {
+	left: 140px;
+	top: 80px;
+	background: #492b17;
+}
+
+.mountain-4 {
+	top: 65px;
+	left: 100px;
+	background: #495977;
+}
+
+.sun {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	background: #db8e23;
+	border-radius: 50%;
+	top: 18px;
+	left: 135px;
+}
+
+.grass {
+	width: 100%;
+}
+
+.signpost {
+	position: absolute;
+	transform: scale(2.25);
+	top: 47px;
+	right: 90px;
+	color: #5b3500;
+}
+
+/* Sleep: Blast Off Into a World of Dreams */
+.sleep-blast-off {
+	background: linear-gradient(to bottom, #00092d 0%, #03095b 100%);
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	position: relative;
+	overflow: hidden;
+}
+.sleep-blast-off .logo-text-container {
+	padding: 25px 20px;
+}
+.sleep-blast-off .logo-text {
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+	position: relative;
+	left: -2px;
+}
+.sleep-blast-off .logo-sub-text {
+	font-size: 1.25rem;
+	font-weight: 300;
+	margin: 0;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+.sleep-blast-off .rocket-1 {
+	position: absolute;
+	top: 40px;
+	transform: scale(3) rotate(-90deg);
+	left: 400px;
+	color: #d3d3d3;
+}
+.sleep-blast-off .rocket-trail-1 {
+	height: 9px;
+	width: 200px;
+	background: linear-gradient(
+		to right,
+		#c90000 0%,
+		#c46b00 33%,
+		#b6bf07 59%,
+		white 68%
+	);
+	position: absolute;
+	transform: rotate(43deg);
+	top: 105px;
+	left: 375px;
+}
+.sleep-blast-off .rocket-2 {
+	position: absolute;
+	top: 60px;
+	transform: scale(4) rotate(-90deg);
+	left: 490px;
+	color: #fff;
+}
+.sleep-blast-off .rocket-trail-2 {
+	height: 13px;
+	width: 200px;
+	background: linear-gradient(
+		to right,
+		#c90000 0%,
+		#c46b00 33%,
+		#b6bf07 59%,
+		white 68%
+	);
+	position: absolute;
+	transform: rotate(43deg);
+	top: 135px;
+	left: 477px;
+}
+.sleep-blast-off .rocket-3 {
+	position: absolute;
+	top: 20px;
+	transform: scale(2) rotate(-90deg);
+	left: 535px;
+	color: #cacaca;
+}
+.sleep-blast-off .rocket-trail-3 {
+	height: 6px;
+	width: 200px;
+	background: linear-gradient(
+		to right,
+		#c90000 0%,
+		#c46b00 33%,
+		#b6bf07 59%,
+		white 68%
+	);
+	position: absolute;
+	transform: rotate(43deg);
+	top: 96px;
+	left: 519px;
+}
+.sleep-blast-off .moon {
+	color: #ede382;
+	transform: scale(3);
+	position: absolute;
+	top: 30px;
+	left: 275px;
+}
+.sleep-blast-off .stars {
+	position: absolute;
+}
+.sleep-blast-off .star-1 {
+	top: 10px;
+	left: 30px;
+	opacity: 0.5;
+	transform: scale(0.8);
+}
+.sleep-blast-off .star-2 {
+	left: 190px;
+	top: 40px;
+	transform: scale(1.5);
+	opacity: 0.85;
+}
+.sleep-blast-off .star-3 {
+	left: 350px;
+	top: 80px;
+	transform: scale(0.75);
+	opacity: 0.35;
+}
+.sleep-blast-off .star-4 {
+	left: 415px;
+	top: 100px;
+	transform: scale(2);
+}
+.sleep-blast-off .star-5 {
+	left: 440px;
+	top: 20px;
+	opacity: 0.65;
+}
+.sleep-blast-off .star-6 {
+	left: 330px;
+	top: 20px;
+	transform: scale(1.25);
+	opacity: 0.8;
+}
+.sleep-blast-off .star-7 {
+	left: 550px;
+	top: 70px;
+	transform: scale(1.15);
+	opacity: 0.45;
+}
+.sleep-blast-off .star-8 {
+	left: 100px;
+	top: 15px;
+	transform: scale(0.6);
+	opacity: 0.25;
+}
+.sleep-blast-off .star-9 {
+	left: 220px;
+	top: 20px;
+	transform: scale(1.05);
+	opacity: 0.45;
+}
+
+.paw-trails {
+	background: #cacaca;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+.paw-trails .logo-text-container {
+	padding: 20px 15px;
+}
+.paw-trails .logo-text,
+.paw-trails .logo-sub-text {
+	margin: 0;
+}
+.paw-trails .logo-text {
+	font-weight: 700;
+	font-size: 2.25rem;
+	position: relative;
+	left: -2px;
+}
+.paw-trails .logo-sub-text {
+	font-size: 0.95rem;
+}
+.paw-trails .icon-container {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 425px;
+	align-items: center;
+	justify-content: space-around;
+	transform: translateY(-50%);
+}
+.paw-trails .heartbeat {
+	transform: scale(4);
+	color: #660d0a;
+}
+.paw-trails .divider {
+	height: 60px;
+	background: #660d0a;
+	width: 6px;
+	margin: 0 40px;
+	border-radius: 15px;
+}
+.paw-trails .grad-cap {
+	transform: scale(4);
+	color: #660d0a;
+}

@@ -86,8 +86,8 @@ const SocialMediaLinks: React.FC<SocialMediaLinksProps> = ({
 			{(displayMode === 'both' || displayMode === 'mobile') && (
 				<div>
 					<DropdownMenu>
-						<DropdownMenuTrigger className="flex items-center gap-1 text-white">
-							<LinkIcon />
+						<DropdownMenuTrigger className="flex items-center gap-1 text-sm md:text-base text-white">
+							<LinkIcon className="size-5 md:size-6" />
 							social
 							<span>
 								<ChevronDown className="size-2" />
