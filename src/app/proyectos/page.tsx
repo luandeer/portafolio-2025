@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function ProjectList() {
 	return (
-		<section className="container mx-auto max-w-4xl py-10 text-white px-4">
+		<section className="container mx-auto max-w-3xl py-10 text-white px-4">
 			<Link
 				href="/"
 				className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-8 group transition-colors"
@@ -17,6 +17,9 @@ export default function ProjectList() {
 			</Link>
 			<div className="flex  items-center justify-between mb-8">
 				<h2 className="text-2xl font-semibold  ">Mis Proyectos</h2>
+				<span className="ml-auto text-sm px-4 py-1.5 bg-white/5 backdrop-blur-md rounded-xl text-gray-300 border border-white/10">
+					{projects.length}
+				</span>
 				{/* <span className="text-sm">Todos los proyectos</span> */}
 			</div>
 			<div className="grid md:grid-cols-2 gap-6">

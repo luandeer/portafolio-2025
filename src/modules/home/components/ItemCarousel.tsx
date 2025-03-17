@@ -73,7 +73,7 @@ export default function CertificateCard({
 					</DialogDescription>
 				</DialogHeader>
 				<div className="relative w-full h-full flex flex-col ">
-					<div className="bg-gray-900 text-primary-foreground px-6 py-4 flex items-center justify-between">
+					<div className="bg-blue-900 text-primary-foreground px-6 py-4 flex items-center justify-between">
 						<div className="flex items-center gap-2">
 							<Award className="h-6 w-6" />
 							<h2 className="md:text-xl font-semibold line-clamp-1">{title}</h2>

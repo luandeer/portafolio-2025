@@ -19,7 +19,7 @@ export default async function ProjectDetail({
 	if (!project) return <div>Proyecto no encontrado</div>;
 
 	return (
-		<div className="container mx-auto max-w-4xl text-white py-10 px-4">
+		<div className="container mx-auto max-w-3xl text-white py-10 px-4">
 			<Link
 				href="/proyectos"
 				className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-8 group transition-colors"
