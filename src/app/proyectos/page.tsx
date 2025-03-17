@@ -1,49 +1,78 @@
 import projects from '@/common/data/Proyectos';
+import { ArrowLeft, BookOpen } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ProjectList() {
 	return (
 		<section className="container mx-auto max-w-4xl py-10 text-white">
-			<h2 className="text-3xl font-bold text-center mb-8">Mis Proyectos</h2>
+			<Link
+				href="/"
+				className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-8 group transition-colors"
+			>
+				<div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#1e293b] group-hover:bg-[#8b5cf6]/20 transition-colors">
+					<ArrowLeft className="w-4 h-4" />
+				</div>
+				<span>Volver</span>
+			</Link>
+			<div className="flex  items-center justify-between mb-8">
+				<h2 className="text-2xl font-semibold  ">Mis Proyectos</h2>
+				{/* <span className="text-sm">Todos los proyectos</span> */}
+			</div>
 			<div className="grid md:grid-cols-2 gap-6">
 				{projects.map((project) => (
-					<div
-						key={project.handle}
-						className="bg-surface-2 p-5 rounded-lg shadow-lg"
-					>
-						<Image
-							src={project.images[0]}
-							alt={project.title}
-							width={200}
-							height={200}
-							className="w-full h-48 object-cover rounded-md"
-						/>
-						<h3 className="text-xl font-semibold mt-3">{project.title}</h3>
-						<p className="text-text-2 text-sm mt-2">{project.description}</p>
-						<div className="flex items-center justify-between mt-4">
-							<a
-								href={project.website}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-primary hover:underline"
+					<div key={project.title} className="group">
+						<Link href={`/proyectos/${project.handle}`} className="block">
+							<div
+								className="relative overflow-hidden rounded-lg mb-4 transition-all duration-500 
+						group-hover:shadow-xl
+						 "
 							>
-								🌐 Ver Proyecto
-							</a>
-							<a
-								href={project.github}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-500 hover:text-gray-700"
-							>
-								🐙 GitHub
-							</a>
-						</div>
-						<Link
-							href={`/proyectos/${project.handle}`}
-							className="block mt-3 text-center text-white bg-primary py-2 rounded-md hover:bg-primary/80"
-						>
-							🔍 Ver Detalles
+								{/* Barra de navegador minimalista */}
+								<div className="bg-[#074799] px-3 py-1.5 flex items-center">
+									<div className="flex space-x-1.5">
+										<div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+										<div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+										<div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+									</div>
+									{/* <div className="ml-3 text-xs text-gray-50 truncate">
+										{project.title}.app
+									</div> */}
+								</div>
+
+								{/* Imagen del proyecto */}
+								<div className="relative aspect-video overflow-hidden">
+									<Image
+										src={project.images[0] || '/placeholder.svg'}
+										alt={project.title}
+										fill
+										className="object-cover transition-all duration-500 ease-out group-hover:scale-[1.03] will-change-transform"
+									/>
+									{/* Overlay al hacer hover */}
+									<div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+									{/* Indicador minimalista */}
+									<div
+										className="absolute inset-0 transition-all duration-500
+                      flex items-center flex-col justify-center opacity-0 group-hover:opacity-100"
+									>
+										{/* Círculo con icono */}
+										<div
+											className="w-12 h-12 rounded-full bg-black/30 
+                        flex items-center justify-center border border-white/10
+                        transform scale-75 group-hover:scale-100 transition-all duration-500"
+										>
+											<BookOpen className="w-5 h-5 text-white" />
+										</div>
+										Ver detalle
+									</div>
+								</div>
+							</div>
+
+							{/* Información del proyecto - Estilo minimalista */}
+							<h3 className="text-lg font-medium mb-1 text-[#e2e8f0] transition-colors duration-300 group-hover:text-gray-300">
+								{project.title}
+							</h3>
+							{/* <p className="text-sm text-gray-400">{project.description}</p> */}
 						</Link>
 					</div>
 				))}

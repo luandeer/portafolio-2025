@@ -7,6 +7,7 @@ type Project = {
 	github: string;
 	images: string[];
 	video?: string;
+	dominio?: string;
 };
 
 const projects: Project[] = [
