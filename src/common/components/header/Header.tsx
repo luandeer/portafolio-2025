@@ -1,3 +1,4 @@
+'use client';
 import { FolderCode, PawPrint } from 'lucide-react';
 import Link from 'next/link';
 import { NavLinks } from './Nav';
@@ -11,7 +12,12 @@ import {
 	SheetTrigger,
 } from '../ui/sheet';
 import { Button } from '../ui/button';
+import { useState } from 'react';
 export const Header = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	// Función para cerrar el modal
+	const closeModal = () => setIsOpen(false);
 	return (
 		<header className=" w-full  sticky  py-4 text-white top-0 bg-[#16191d]/50 backdrop-blur-md z-40 px-4">
 			<div className=" max-w-[1000px] mx-auto flex items-center justify-between">
@@ -23,7 +29,7 @@ export const Header = () => {
 					<NavLinks />
 				</nav>
 				<div className="block md:hidden">
-					<Sheet>
+					<Sheet open={isOpen} onOpenChange={setIsOpen}>
 						<SheetTrigger asChild>
 							<Button className="bg-transparent text-white p-0 hover:bg-transparent cursor-pointer">
 								Menú
@@ -46,6 +52,7 @@ export const Header = () => {
 								<Link
 									href="/proyectos"
 									className="text-white flex items-center gap-2 underline underline-offset-8"
+									onClick={closeModal}
 								>
 									{' '}
 									Ver proyectos <FolderCode />

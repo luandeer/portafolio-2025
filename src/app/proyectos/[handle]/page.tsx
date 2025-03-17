@@ -1,6 +1,6 @@
 import { Badge } from '@/common/components/ui/badge';
 import projects from '@/common/data/Proyectos';
-import { ArrowLeft, Github, Globe, Layers } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Github, Globe, Layers } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -60,9 +60,10 @@ export default async function ProjectDetail({
 							href={project.website}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-white hover:underline"
+							className="text-white underline underline-offset-4 flex items-center gap-2"
 						>
 							{project.dominio}
+							<ExternalLink className="size-4" />
 						</Link>
 					</div>
 				</div>
