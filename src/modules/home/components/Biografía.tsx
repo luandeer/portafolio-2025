@@ -18,7 +18,7 @@ export default function Biography() {
 		{
 			year: 'presente',
 			description:
-				'Obtuve el grado de bachiller en Ingeniería de Software y actualmente Trabajo en una empresa llamada Trend.',
+				'Obtuve el grado de bachiller en Ingeniería de Software y actualmente trabajo como Frontend Developer.',
 		},
 	];
 

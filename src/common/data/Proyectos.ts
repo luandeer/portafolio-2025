@@ -4,7 +4,7 @@ type Project = {
 	description: string;
 	tech: string[];
 	website: string;
-	github: string;
+	github?: string;
 	images: string[];
 	video?: string;
 	dominio?: string;
@@ -12,83 +12,47 @@ type Project = {
 
 const projects: Project[] = [
 	{
-		handle: 'sonqu-recetas',
-		title: 'Sonqu - Recetas Peruanas',
+		handle: 'marus-catalogo',
+		title: 'Catálogo Marus(Proyecto en desarrollo)',
 		description:
-			'Plataforma donde los usuarios pueden explorar recetas peruanas, guardarlas y compartirlas. Incluye filtros avanzados y videos cortos.',
-		tech: ['Next.js', 'Tailwind CSS', 'PostgreSQL', 'Cloudinary'],
-		website: 'https://sonqu.com',
-		github: 'https://github.com/usuario/sonqu',
+			'Creé un catálogo virtual de productos con una base de datos centralizada, permitiendo a los usuarios explorar opciones de compra y realizar pedidos para domicilio. El sitio presenta una navegación sencilla, integrando opciones de búsqueda y detalles de cada producto para mejorar la experiencia de compra en línea.',
+		tech: ['Javascript', 'Tailwind CSS', 'Vercel', 'Cloudinary'],
+		website: 'https://marus.vercel.app/',
+		dominio: 'marus.vercel.app',
 		images: [
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
+			'/proyectos/marus/1.png',
+			'/proyectos/marus/3.png',
+			'/proyectos/marus/2.png',
 		],
 		video: '/projects/sonqu-demo.mp4',
 	},
 
 	{
-		handle: 'fittrack-dashboard',
-		title: 'FitTrack - Dashboard de Rutinas',
+		handle: 'Jhigger',
+		title: 'Juegos Jhigger',
 		description:
-			'Aplicación web que permite a los usuarios registrar su progreso en el gimnasio, generar rutinas personalizadas y visualizar estadísticas.',
+			'Desarrollé un sitio web dinámico con una galería de imágenes conectada a  Google Sheets, permitiendo una fácil actualización del contenido sin conocimientos técnicos. El proyecto destaca por su interfaz intuitiva y su capacidad para mostrar y organizar imágenes de forma fluida, optimizando la experiencia del usuario.',
 		tech: ['React', 'TypeScript', 'Firebase', 'Recharts'],
-		website: 'https://fittrack.com',
-		github: 'https://github.com/usuario/fittrack',
-		images: [
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-		],
+		website: 'https://www.juegosjhigger.pe/',
+		images: ['/proyectos/jhigger/01.png', '/proyectos/jhigger/02.png'],
+		dominio: 'juegosjhigger.pe',
 		video: '/projects/fittrack-demo.mp4',
 	},
 
 	{
-		handle: 'eshop-tienda-online',
-		title: 'E-Shop - Tienda Online',
+		handle: 'sistema-marus',
+		title: 'Sistema de pedido',
 		description:
-			'E-commerce con pasarela de pagos, autenticación de usuarios y administración de productos desde un dashboard.',
-		tech: ['Next.js', 'Stripe', 'ShadCN UI', 'MongoDB'],
-		website: 'https://eshop.com',
-		github: 'https://github.com/usuario/eshop',
+			'Desarrollé un sistema de pedidos para la gestión interna de una pollería, que permite administrar solicitudes de consumo en mesas, para llevar y de delivery. Este sistema genera automáticamente órdenes de compra, optimizando el flujo de trabajo y facilitando la administración de pedidos. Con una interfaz intuitiva, mejora la eficiencia operativa, permitiendo un servicio más rápido y efectivo para los clientes.',
+		tech: ['Javascript', 'Tailwind CSS', 'Vercel', 'Cloudinary'],
+		website: 'https://sistema-marus.vercel.app/',
+		dominio: 'sistema-marus.vercel.app',
 		images: [
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
+			'/proyectos/sistema-marus/2.png',
+			'/proyectos/sistema-marus/1.png',
+			'/proyectos/sistema-marus/3.png',
 		],
 		video: '/projects/eshop-demo.mp4',
-	},
-
-	{
-		handle: 'moviex-catalogo',
-		title: 'MovieX - Catálogo de Películas',
-		description:
-			'App para explorar películas y series con detalles, calificaciones y recomendaciones, usando la API de TMDB.',
-		tech: ['React', 'Vite', 'Zustand', 'TMDB API'],
-		website: 'https://moviex.com',
-		github: 'https://github.com/usuario/moviex',
-		images: [
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-		],
-		video: '/projects/moviex-demo.mp4',
-	},
-
-	{
-		handle: 'devhub-comunidad',
-		title: 'DevHub - Comunidad de Desarrolladores',
-		description:
-			'Foro para compartir proyectos, artículos y recursos de desarrollo web con autenticación y sistema de votaciones.',
-		tech: ['Next.js', 'Supabase', 'Tailwind CSS', 'Clerk'],
-		website: 'https://devhub.com',
-		github: 'https://github.com/usuario/devhub',
-		images: [
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-			'/certificados/certificado1.jpg',
-		],
-		video: '/projects/devhub-demo.mp4',
 	},
 ];
 

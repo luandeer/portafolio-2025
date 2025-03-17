@@ -57,33 +57,35 @@ export default async function ProjectDetail({
 					</div>
 					<div>
 						<Link
-							href="https://fittrack.com"
+							href={project.website}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-white hover:underline"
 						>
-							fittrack.com
+							{project.dominio}
 						</Link>
 					</div>
 				</div>
 
 				{/* GitHub */}
-				<div className="flex gap-2 flex-row sm:items-center sm:gap-3">
-					<div className="flex items-center gap-2">
-						<Github className="h-5 w-5 shrink-0 text-white" />
-						<span className="font-medium">GitHub:</span>
+				{project.github && (
+					<div className="flex gap-2 flex-row sm:items-center sm:gap-3">
+						<div className="flex items-center gap-2">
+							<Github className="h-5 w-5 shrink-0 text-white" />
+							<span className="font-medium">GitHub:</span>
+						</div>
+						<div>
+							<Link
+								href={project.github}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-white hover:underline"
+							>
+								Ver 🚀
+							</Link>
+						</div>
 					</div>
-					<div>
-						<Link
-							href="https://github.com/inkdrop/repo"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="text-white hover:underline"
-						>
-							Ver 🚀
-						</Link>
-					</div>
-				</div>
+				)}
 
 				{/* Tech Stack */}
 				<div className="flex items-center flex-wrap gap-2 w-full">

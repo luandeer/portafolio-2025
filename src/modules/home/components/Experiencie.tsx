@@ -40,17 +40,18 @@ export default function Experiencie() {
 			],
 		},
 		{
-			year: '(julio 2024 – septiembre 2024)',
-			title: 'EDteam - Intership in Frontend Development',
+			year: '(abril 2023 – mayo 2024)',
+			title: 'Sonqu - Junior Software Engineer',
 			description:
-				'Desarrollé componentes en React y Next.js, usando GitLab, CSSModules y Tailwind CSS. Participé en todo el ciclo de desarrollo, incluyendo features, bugs y refactorización según estándares de Edteam. Además, documenté procesos y realicé pruebas en desarrollo y producción para asegurar calidad y rendimiento.',
-			image: '/edteam.jpg',
+				'Desarrollé módulos para el dashboard de gestión interna, implementando cruds para la gestión de usuarios con TanStack Query para datos en tiempo real. Convertí el prototipo de Figma en código funcional, creando componentes interactivos y un diseño responsivo. También implementé autenticación y gestión de usuarios, colaborando en pruebas antes del despliegue. Además, trabajé en equipo para garantizar buenas prácticas de desarrollo y configuré el repositorio en GitHub para facilitar la colaboración.',
+			image: '/experiencia/sonqulogo.png',
 			tags: [
 				'React',
+				' Auth.js',
 				'Typescript',
 				'Next.js',
 				'Tailwind CSS',
-				'GitLab',
+				'Github',
 				'Module css',
 				'React Query',
 				'Zustand',
@@ -72,7 +73,7 @@ export default function Experiencie() {
 							<Image
 								src={event.image}
 								alt={event.title}
-								className="object-cover w-[30px] h-[30px] rounded-sm"
+								className="object-cover w-full max-w-[30px] h-[30px]  bg-white rounded-sm"
 								width={30}
 								height={30}
 							/>

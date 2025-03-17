@@ -17,7 +17,7 @@ export default function Home() {
 		<main className=" max-lg:px-4">
 			{/* <Banner1 /> */}
 
-			<div className="flex flex-col-reverse gap-2 md:gap-0 md:flex-row items-start justify-between w-full mt-10 max-w-[700px] mx-auto mb-10">
+			<div className="flex flex-col-reverse gap-2 md:gap-0 md:flex-row items-start justify-between w-full mt-10 max-w-4xl mx-auto mb-10">
 				<div className="flex-1 space-y-1 w-full">
 					<h1 className="font-bold text-3xl md:text-4xl text-white  leading-none flex items-end gap-2">
 						<span className="leading-none">Telmo Alexander</span>
@@ -26,7 +26,7 @@ export default function Home() {
 						</span>
 					</h1>
 
-					<p className="max-w-[700px] text-sm md:text-base text-gray-300 mb-4">
+					<p className="max-w-4xl text-sm md:text-base text-gray-300 mb-4">
 						Frontend Developer. Software Engineering.
 					</p>
 					<div className="flex flex-wrap items-center gap-2 md:gap-4">
@@ -53,7 +53,7 @@ export default function Home() {
 
 			{/* hola mundo */}
 
-			<div className="max-w-[700px] mx-auto text-white mb-10">
+			<div className="max-w-4xl mx-auto text-white mb-10">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
 					¡Hola mundo!
 				</h2>
@@ -71,14 +71,14 @@ export default function Home() {
 
 			{/* bio */}
 
-			<div className="max-w-[700px] mx-auto text-white mb-10">
+			<div className="max-w-4xl mx-auto text-white mb-10">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
 					Bio
 				</h2>
 				<Biography />
 			</div>
 			{/* hobbies */}
-			<div className="max-w-[700px] mx-auto text-white mb-10">
+			<div className="max-w-4xl mx-auto text-white mb-10">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
 					Yo ♥
 				</h2>
@@ -90,7 +90,7 @@ export default function Home() {
 
 			{/* Education */}
 
-			<div className="max-w-[700px] mx-auto text-white mb-10">
+			<div className="max-w-4xl mx-auto text-white mb-10">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
 					Experiencia
 				</h2>
@@ -99,7 +99,7 @@ export default function Home() {
 
 			{/* Education */}
 
-			<div className="max-w-[700px] mx-auto text-white mb-10">
+			<div className="max-w-4xl mx-auto text-white mb-10">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
 					Educación
 				</h2>
@@ -107,7 +107,7 @@ export default function Home() {
 			</div>
 
 			{/* Certifications*/}
-			<div className="max-w-[700px] mx-auto text-white mb-10 w-full overflow-hidden">
+			<div className="max-w-4xl mx-auto text-white mb-10 w-full overflow-hidden">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-6">
 					Certificaciones
 				</h2>

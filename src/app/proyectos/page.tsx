@@ -29,7 +29,7 @@ export default function ProjectList() {
 						 "
 							>
 								{/* Barra de navegador minimalista */}
-								<div className="bg-[#074799] px-3 py-1.5 flex items-center">
+								<div className="bg-gray-950 px-3 py-1.5 flex items-center">
 									<div className="flex space-x-1.5">
 										<div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
 										<div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
