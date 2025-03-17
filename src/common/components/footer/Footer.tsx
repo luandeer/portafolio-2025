@@ -26,7 +26,7 @@ const Footer = () => {
 					</a> */}
 					<a
 						className="text-text-2 w-10 h-10 grid place-items-center rounded-md hover:bg-surface-4"
-						href="https://twitter.com/intent/follow?screen_name=jh3yy"
+						href="https://x.com/alexanderpreg"
 						rel="noopener noreferrer"
 						target="_blank"
 						title="Come follow me on Twitter!"
@@ -61,7 +61,7 @@ const Footer = () => {
 					</a> */}
 					<a
 						className="text-text-2 w-10 h-10 grid place-items-center rounded-md hover:bg-surface-4"
-						href="https://instagram.com/jh3yyyy"
+						href="https://www.instagram.com/alexanderpreg/"
 						rel="noopener noreferrer"
 						target="_blank"
 						title="Come follow me on Instagram!"
@@ -113,7 +113,7 @@ const Footer = () => {
 					</a> */}
 					<a
 						className="text-text-2 w-10 h-10 grid place-items-center rounded-md hover:bg-surface-4"
-						href="https://www.linkedin.com/in/tuusuario/"
+						href="https://www.linkedin.com/in/telmoalexander/"
 						rel="noopener noreferrer"
 						target="_blank"
 						title="Conéctate conmigo en LinkedIn"
@@ -131,7 +131,7 @@ const Footer = () => {
 
 					<a
 						className="text-text-2 w-10 h-10 grid place-items-center rounded-md hover:bg-surface-4"
-						href="https://github.com/jh3y"
+						href="https://github.com/luandeer"
 						rel="noopener noreferrer"
 						target="_blank"
 						title="See what I'm making on Github"

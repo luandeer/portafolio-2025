@@ -48,14 +48,14 @@ export default async function ProjectDetail({
 			</div>
 
 			{/* Toda la información primero */}
-			<dl className="mt-8 space-y-3">
+			<div className="mt-8 space-y-3">
 				{/* Website */}
 				<div className="flex  gap-2 flex-row sm:items-center sm:gap-3">
-					<dt className="flex items-center gap-2 text-white">
+					<div className="flex items-center gap-2 text-white">
 						<Globe className="h-5 w-5 shrink-0 text-white" />
 						<span className="font-medium">Website:</span>
-					</dt>
-					<dd>
+					</div>
+					<div>
 						<Link
 							href="https://fittrack.com"
 							target="_blank"
@@ -64,7 +64,7 @@ export default async function ProjectDetail({
 						>
 							fittrack.com
 						</Link>
-					</dd>
+					</div>
 				</div>
 
 				{/* GitHub */}
@@ -86,18 +86,18 @@ export default async function ProjectDetail({
 				</div>
 
 				{/* Tech Stack */}
-				<div className="flex items-center gap-2 w-full">
+				<div className="flex items-center flex-wrap gap-2 w-full">
 					<div className="flex items-center gap-2">
 						<Layers className="h-5 w-5 shrink-0 text-white" />
 						<span className="font-medium whitespace-nowrap">Tech Stack:</span>
 					</div>
 					<div>
 						{project.tech.length > 0 && (
-							<div className="flex flex-wrap gap-2">
+							<div className="flex items-center flex-wrap w-full gap-2">
 								{project.tech.map((tech, index) => (
 									<Badge
 										key={index}
-										className="text-xs px-2 py-1 bg-white/5 backdrop-blur-md rounded-full text-gray-300 border border-white/10"
+										className="text-xs px-2 py-1 bg-white/5 backdrop-blur-md rounded-lg text-gray-300 border border-white/10"
 									>
 										{tech}
 									</Badge>
@@ -106,14 +106,14 @@ export default async function ProjectDetail({
 						)}
 					</div>
 				</div>
-			</dl>
+			</div>
 			{/* Imágenes desde el array */}
 
 			<div className="my-16">
 				<div className="flex items-center gap-3 mb-8">
 					{/* <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div> */}
 					<h2 className="text-2xl font-bold">Galería</h2>
-					<span className="ml-auto text-sm px-4 py-1.5 bg-white/5 backdrop-blur-md rounded-full text-gray-300 border border-white/10">
+					<span className="ml-auto text-sm px-4 py-1.5 bg-white/5 backdrop-blur-md rounded-xl text-gray-300 border border-white/10">
 						{project.images.length} imágenes
 					</span>
 				</div>

@@ -10,7 +10,8 @@ import { CarouselCertifications } from '@/modules/home/components/Certifications
 import Education from '@/modules/home/components/Education';
 import Experiencie from '@/modules/home/components/Experiencie';
 import SocialMediaLinks from '@/modules/home/components/Social';
-import { BadgeCheck, Cake, Luggage } from 'lucide-react';
+import { BadgeCheck, Download, Luggage } from 'lucide-react';
+import Link from 'next/link';
 export default function Home() {
 	return (
 		<main className=" max-lg:px-4">
@@ -30,13 +31,18 @@ export default function Home() {
 					</p>
 					<div className="flex flex-wrap items-center gap-2 md:gap-4">
 						<span className="flex items-center gap-1 text-sm md:text-base text-gray-300">
-							<Luggage className="size-5 md:size-6" /> Disponible (pero con café
+							<Luggage className="size-4 md:size-5" /> Disponible (pero con café
 							☕)
 						</span>
 						<SocialMediaLinks displayMode="mobile" />
-						<span className="flex items-center gap-1 text-sm md:text-base text-gray-300">
-							<Cake className="size-5 md:size-6" /> 7 de abril
-						</span>
+						<Link
+							href="/cv-alexanderpr.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-1 text-sm md:text-base text-gray-300"
+						>
+							<Download className="size-4 md:size-5" /> Descargar cv
+						</Link>
 					</div>
 				</div>
 				<Avatar className="size-28 md:size-32 border border-white">

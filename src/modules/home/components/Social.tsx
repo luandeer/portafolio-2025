@@ -1,7 +1,13 @@
 'use client';
 import { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
-import { ChevronDown, Github, Linkedin, LinkIcon } from 'lucide-react';
+import {
+	ChevronDown,
+	Github,
+	Instagram,
+	Linkedin,
+	LinkIcon,
+} from 'lucide-react';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import {
@@ -23,15 +29,22 @@ const socialLinks: SocialLink[] = [
 	{
 		id: 2,
 		label: 'LinkedIn',
-		icon: <Linkedin className="size-5" />,
+		icon: <Linkedin className="size-5 text-white" />,
 		url: 'https://www.linkedin.com/in/telmoalexander/',
 		style: 'bg-sky-700',
 	},
 	{
 		id: 3,
 		label: 'GitHub',
-		icon: <Github className="size-5" />,
+		icon: <Github className="size-5 text-white" />,
 		url: 'https://github.com/luandeer',
+		style: 'bg-gray-700',
+	},
+	{
+		id: 4,
+		label: 'Instagram',
+		icon: <Instagram className="size-5 text-white" />,
+		url: 'https://www.instagram.com/alexanderpreg/',
 		style: 'bg-gray-700',
 	},
 ];
@@ -87,7 +100,7 @@ const SocialMediaLinks: React.FC<SocialMediaLinksProps> = ({
 				<div>
 					<DropdownMenu>
 						<DropdownMenuTrigger className="flex items-center gap-1 text-sm md:text-base text-white">
-							<LinkIcon className="size-5 md:size-6" />
+							<LinkIcon className="size-4 md:size-5" />
 							social
 							<span>
 								<ChevronDown className="size-2" />

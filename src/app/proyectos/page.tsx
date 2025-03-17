@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function ProjectList() {
 	return (
-		<section className="container mx-auto max-w-4xl py-10 text-white">
+		<section className="container mx-auto max-w-4xl py-10 text-white px-4">
 			<Link
 				href="/"
 				className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-8 group transition-colors"
