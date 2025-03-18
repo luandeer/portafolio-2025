@@ -35,7 +35,7 @@ export default function CertificateCard({
 	return (
 		<Dialog open={isOpen} onOpenChange={setIsOpen}>
 			<DialogTrigger asChild className="ring-0 focus:ring-0 focus:outline-none">
-				<button className="w-full" onPointerDown={(e) => e.preventDefault()}>
+				<button className="w-full">
 					<div className=" cursor-pointer w-full aspect-video  group rounded-lg bg-gray-800">
 						<div className="px-4 pt-4 pb-2 ">
 							<div className="relative aspect-video  overflow-hidden w-full h-full rounded-t-md  flex-col  ">
