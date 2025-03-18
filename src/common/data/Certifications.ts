@@ -1,7 +1,7 @@
 export function CertificationsData() {
 	return [
 		{
-			imageUrl: '/certificados/certificado1.jpg',
+			imageUrl: '/certificados/certificado1.webp',
 			title: 'Scrum Master Certified',
 			institution: 'CertiProf',
 			date: '2023',
@@ -9,7 +9,7 @@ export function CertificationsData() {
 			alt: 'certificado de scrum master',
 		},
 		{
-			imageUrl: '/certificados/certificado2.png',
+			imageUrl: '/certificados/certificado2.webp',
 			title: 'Junior Frontend Developer',
 			institution: 'Programa Oracle Next Education - Alura Latam',
 			date: '2023',
@@ -17,7 +17,7 @@ export function CertificationsData() {
 			alt: 'certficacion como frontend developer',
 		},
 		{
-			imageUrl: '/certificados/certificado3.png',
+			imageUrl: '/certificados/certificado3.webp',
 			title: 'Github para programadores',
 			institution: 'Linkedin',
 			date: '2023',
@@ -25,7 +25,7 @@ export function CertificationsData() {
 			alt: 'certificacion de Github ',
 		},
 		{
-			imageUrl: '/certificados/certificado4.jpeg',
+			imageUrl: '/certificados/certificado4.webp',
 			title: 'Bachiller en Ingeniería de Software',
 			institution: 'UNMSM',
 			date: '2025',
@@ -33,7 +33,7 @@ export function CertificationsData() {
 			alt: 'bachiller en ingeniería de software',
 		},
 		{
-			imageUrl: '/certificados/constancia.jpg',
+			imageUrl: '/certificados/constancia.webp',
 			title: 'Constancia de Egresado',
 			institution: 'UNMSM',
 			date: '2025',
