@@ -1,4 +1,12 @@
-export function CertificationsData() {
+export interface Certificate {
+	imageUrl: string;
+	title: string;
+	institution: string;
+	date: string;
+	type: string;
+	alt?: string;
+}
+export function CertificationsData(): Certificate[] {
 	return [
 		{
 			imageUrl: '/certificados/certificado1.webp',
