@@ -82,7 +82,7 @@ export default async function ProjectDetail({
 								rel="noopener noreferrer"
 								className="text-white hover:underline"
 							>
-								Ver 🚀
+								{project.github}
 							</Link>
 						</div>
 					</div>

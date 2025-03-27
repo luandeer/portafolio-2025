@@ -40,13 +40,13 @@ export function CertificationsData(): Certificate[] {
 			type: 'Grado de bachiller',
 			alt: 'bachiller en ingeniería de software',
 		},
-		{
-			imageUrl: '/certificados/constancia.webp',
-			title: 'Constancia de Egresado',
-			institution: 'UNMSM',
-			date: '2025',
-			type: 'Certificado',
-			alt: 'Constancia de egresado en ingeniería de software',
-		},
+		// {
+		// 	imageUrl: '/certificados/constancia.webp',
+		// 	title: 'Constancia de Egresado',
+		// 	institution: 'UNMSM',
+		// 	date: '2025',
+		// 	type: 'Certificado',
+		// 	alt: 'Constancia de egresado en ingeniería de software',
+		// },
 	];
 }
