@@ -29,19 +29,19 @@ export default function Home() {
 					<p className="max-w-3xl text-sm md:text-base text-gray-300 mb-4">
 						Frontend Developer. Software Engineering.
 					</p>
-					<div className="flex flex-wrap items-center gap-2 md:gap-4">
+					<div className="flex flex-wrap items-center gap-2 md:gap-3">
 						<span className="flex items-center gap-1 text-sm md:text-base text-gray-300">
 							<Luggage className="size-4 md:size-5" /> Disponible (pero con café
 							☕)
 						</span>
-						<SocialMediaLinks displayMode="mobile" />
+						<SocialMediaLinks displayMode="desktop" />
 						<Link
 							href="/cv-alexanderpr.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center gap-1 text-sm md:text-base text-gray-300"
+							className="flex items-center gap-1 text-sm hover:bg-gray-800  text-gray-400 rounded-md border border-gray-600 px-2 py-0.5"
 						>
-							<Download className="size-4 md:size-5" /> Descargar cv
+							<Download className="size-4" /> CV
 						</Link>
 					</div>
 				</div>
@@ -77,6 +77,15 @@ export default function Home() {
 				</h2>
 				<Biography />
 			</section>
+
+			{/* Certifications*/}
+			<section className="max-w-3xl mx-auto text-white mb-10 w-full overflow-hidden">
+				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-6">
+					Certificaciones
+				</h2>
+				<CarouselCertifications />
+			</section>
+
 			{/* hobbies */}
 			<section className="max-w-3xl mx-auto text-white mb-10">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
@@ -104,14 +113,6 @@ export default function Home() {
 					Educación
 				</h2>
 				<Education />
-			</section>
-
-			{/* Certifications*/}
-			<section className="max-w-3xl mx-auto text-white mb-10 w-full overflow-hidden">
-				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-6">
-					Certificaciones
-				</h2>
-				<CarouselCertifications />
 			</section>
 		</main>
 	);

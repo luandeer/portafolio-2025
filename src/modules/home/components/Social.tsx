@@ -29,23 +29,25 @@ const socialLinks: SocialLink[] = [
 	{
 		id: 2,
 		label: 'LinkedIn',
-		icon: <Linkedin className="size-5 text-white" />,
+		icon: <Linkedin className="size-4 text-gray-300" />,
 		url: 'https://www.linkedin.com/in/telmoalexander/',
-		style: 'bg-sky-700',
+		style:
+			' bg-gradient-to-b from-[#0A66C2]/20 to-[#0A66C2]/10  border border-[#0A66C2]/30  shadow-md',
 	},
 	{
 		id: 3,
 		label: 'GitHub',
-		icon: <Github className="size-5 text-white" />,
+		icon: <Github className="size-4 text-gray-300" />,
 		url: 'https://github.com/luandeer',
-		style: 'bg-gray-700',
+		style:
+			'bg-gradient-to-b from-gray-700/20 to-gray-700/10  border border-gray-600/30',
 	},
 	{
 		id: 4,
 		label: 'Instagram',
-		icon: <Instagram className="size-5 text-white" />,
+		icon: <Instagram className="size-4 text-gray-300" />,
 		url: 'https://www.instagram.com/alexanderpreg/',
-		style: 'bg-gray-700',
+		style: 'bg-[#be185d]/20  border border-[#be185d]/20',
 	},
 ];
 
@@ -75,7 +77,7 @@ const SocialMediaLinks: React.FC<SocialMediaLinksProps> = ({
 								target="_blank"
 								rel="noopener noreferrer"
 								className={cn(
-									`${link.style} p-2 rounded-xl text-white transition flex items-center justify-center`
+									`${link.style} p-1.5 rounded-lg text-white transition flex items-center justify-center`
 								)}
 							>
 								{link.icon}
