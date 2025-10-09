@@ -76,8 +76,8 @@ export default function Home() {
 			{/* contribuciones */}
 
 			<section className="max-w-3xl mx-auto text-white mb-10">
-				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
-					Bio
+				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4 capitalize">
+					contribuciones en el último año{' '}
 				</h2>
 				<GitHubContributions />
 			</section>
@@ -85,8 +85,8 @@ export default function Home() {
 			{/* bio */}
 
 			<section className="max-w-3xl mx-auto text-white mb-10">
-				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4 capitalize">
-					contributions in the last year
+				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4 ">
+					Bio
 				</h2>
 				<Biography />
 			</section>
