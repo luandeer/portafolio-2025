@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/common/components/header/Header';
 import Footer from '@/common/components/footer/Footer';
 import MarioBanner from '@/common/components/BannerOficial';
+import { TooltipProvider } from '@/common/components/ui/tooltip';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -33,7 +34,7 @@ export default function RootLayout({
 				<Header />
 				<div className="flex flex-col">
 					<MarioBanner />
-					{children}
+					<TooltipProvider delayDuration={0}>{children}</TooltipProvider>
 				</div>
 				<Footer />
 			</body>

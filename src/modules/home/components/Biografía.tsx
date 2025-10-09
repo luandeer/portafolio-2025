@@ -2,7 +2,7 @@ export default function Biography() {
 	const events = [
 		{
 			year: '2000',
-			description: 'Nací en Lima, Perú.',
+			description: 'Lima, Perú.',
 		},
 		{
 			year: '2023',

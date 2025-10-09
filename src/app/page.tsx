@@ -9,6 +9,7 @@ import ButtonPortafolio from '@/modules/home/components/ButtonPortafolio';
 import { CarouselCertifications } from '@/modules/home/components/Certifications';
 import Education from '@/modules/home/components/Education';
 import Experiencie from '@/modules/home/components/Experiencie';
+import { GitHubContributions } from '@/modules/home/components/github-panel/GithubContributions';
 import SocialMediaLinks from '@/modules/home/components/Social';
 import { BadgeCheck, Download, Luggage } from 'lucide-react';
 import Link from 'next/link';
@@ -46,7 +47,11 @@ export default function Home() {
 					</div>
 				</div>
 				<Avatar className="size-28 md:size-32 border border-white">
-					<AvatarImage src="/me.jpg" alt="@shadcn" />
+					<AvatarImage
+						src="/me.png"
+						alt="@shadcn"
+						className="object-cover object-top"
+					/>
 					<AvatarFallback></AvatarFallback>
 				</Avatar>
 			</section>
@@ -68,12 +73,20 @@ export default function Home() {
 
 				<ButtonPortafolio />
 			</section>
-
-			{/* bio */}
+			{/* contribuciones */}
 
 			<section className="max-w-3xl mx-auto text-white mb-10">
 				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4">
 					Bio
+				</h2>
+				<GitHubContributions />
+			</section>
+
+			{/* bio */}
+
+			<section className="max-w-3xl mx-auto text-white mb-10">
+				<h2 className="text-lg underline decoration-3 underline-offset-8 mb-4 capitalize">
+					contributions in the last year
 				</h2>
 				<Biography />
 			</section>
