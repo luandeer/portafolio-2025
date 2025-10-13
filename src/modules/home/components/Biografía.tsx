@@ -18,7 +18,7 @@ export default function Biography() {
 		{
 			year: 'presente',
 			description:
-				'Obtuve el grado de bachiller en Ingeniería de Software y actualmente trabajo como Frontend Developer.',
+				'Obtuve el grado de bachiller en Ingeniería de Software y actualmente trabajo como Full Stack Developer.',
 		},
 	];
 

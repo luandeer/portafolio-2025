@@ -8,12 +8,12 @@ export function GitHubContributions() {
 	const contributions = getGitHubContributions();
 
 	return (
-		<Panel>
+		<div>
 			<h2 className="sr-only">GitHub Contributions</h2>
 
 			<Suspense fallback={<GitHubContributionFallback />}>
 				<GitHubContributionGraph contributions={contributions} />
 			</Suspense>
-		</Panel>
+		</div>
 	);
 }

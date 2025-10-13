@@ -29,14 +29,14 @@ export function GitHubContributionGraph({
 
 	return (
 		<ContributionGraph
-			className="mx-auto py-2"
+			className="w-full py-2"
 			data={data}
 			blockSize={11}
 			blockMargin={3}
 			blockRadius={2}
 		>
 			<ContributionGraphCalendar
-				className="no-scrollbar px-2"
+				className="no-scrollbar"
 				title="GitHub Contributions"
 			>
 				{({ activity, dayIndex, weekIndex }) => (
@@ -61,7 +61,7 @@ export function GitHubContributionGraph({
 				)}
 			</ContributionGraphCalendar>
 
-			<ContributionGraphFooter className="px-2">
+			<ContributionGraphFooter>
 				<ContributionGraphTotalCount>
 					{({ totalCount, year }) => (
 						<div className="text-muted-foreground">
