@@ -1,0 +1,73 @@
+[
+	{
+		"year": "Junio 2025 – presente",
+		"role": "Full Stack Developer",
+		"company": "PlayGroupLatam",
+		"link": "https://playgrouplatam.com/",
+		"description": "Desempeño el rol de Full Stack Developer en el desarrollo de e-commerce y aplicaciones de distintos sectores de la empresa. Trabajo con Next.js, Laravel 12, Shadcn UI y Tailwind CSS, creando interfaces modernas y optimizadas, integradas con APIs y servicios en la nube. Participo en todo el ciclo de desarrollo, desde la arquitectura hasta el despliegue, garantizando rendimiento, escalabilidad y una excelente experiencia de usuario.",
+		"image": "/play.jpg",
+		"tags": [
+			"Next js",
+			"Google cloud Plataform",
+			"Typescript",
+			"Laravel 12",
+			"Tailwind CSS",
+			"Sitground",
+			"Vercel",
+			"Git/GitHub"
+		]
+	},
+	{
+		"year": "noviembre 2024 – febrero 2025",
+		"role": "Frontend Developer",
+		"company": "Nerd",
+		"link": "https://nerd.pe",
+		"description": "Desarrollé interfaces para e-commerce e inmobiliarias, asegurando su funcionalidad y preparación para el backend. Creé experiencias de usuario fluidas, diseñé plantillas de mailing en HTML/CSS y coordiné con equipos de diseño y QA. Además, gestioné repositorios en Git y GitHub para optimizar el trabajo colaborativo.",
+		"image": "/nerd.jpg",
+		"tags": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Tailwind CSS",
+			"Sitground",
+			"Vercel",
+			"Git/GitHub"
+		]
+	},
+	{
+		"year": "julio 2024 – septiembre 2024",
+		"role": "Internship in Frontend Development",
+		"company": "EDteam",
+		"link": "https://ed.team",
+		"description": "Desarrollé componentes en React y Next.js, usando GitLab, CSSModules y Tailwind CSS. Participé en todo el ciclo de desarrollo, incluyendo features, bugs y refactorización según estándares de Edteam. Además, documenté procesos y realicé pruebas en desarrollo y producción para asegurar calidad y rendimiento.",
+		"image": "/edteam.jpg",
+		"tags": [
+			"React",
+			"TypeScript",
+			"Next.js",
+			"Tailwind CSS",
+			"GitLab",
+			"Module CSS",
+			"React Query",
+			"Zustand"
+		]
+	},
+	{
+		"year": "abril 2023 – mayo 2024",
+		"role": "Junior Software Engineer",
+		"company": "Sonqu",
+		"description": "Desarrollé módulos para el dashboard de gestión interna, implementando cruds para la gestión de usuarios con TanStack Query para datos en tiempo real. Convertí el prototipo de Figma en código funcional, creando componentes interactivos y un diseño responsivo. También implementé autenticación y gestión de usuarios, colaborando en pruebas antes del despliegue. Además, trabajé en equipo para garantizar buenas prácticas de desarrollo y configuré el repositorio en GitHub para facilitar la colaboración.",
+		"image": "/experiencia/sonqulogo.png",
+		"tags": [
+			"React",
+			"Auth.js",
+			"TypeScript",
+			"Next.js",
+			"Tailwind CSS",
+			"GitHub",
+			"Module CSS",
+			"React Query",
+			"Zustand"
+		]
+	}
+]
