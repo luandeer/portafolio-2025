@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function ButtonPortafolio() {
 	return (
-		<div className="flex items-center justify-center  ">
+		<div className="flex items-center justify-center  my-6">
 			<Link
 				href="/proyectos"
 				className="

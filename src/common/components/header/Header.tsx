@@ -1,5 +1,5 @@
 'use client';
-import { FolderCode, PawPrint } from 'lucide-react';
+import { Download, FolderCode, PawPrint } from 'lucide-react';
 import Link from 'next/link';
 import { NavLinks } from './Nav';
 import {
@@ -13,6 +13,7 @@ import {
 } from '../ui/sheet';
 import { Button } from '../ui/button';
 import { useState } from 'react';
+import SocialMediaLinks from '@/modules/home/components/Social';
 export const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -25,9 +26,12 @@ export const Header = () => {
 					<PawPrint className="-rotate-90 group-hover:-rotate-45 transition-all duration-300 ease-in-out" />
 					alexanderpreg.
 				</Link>
-				<nav className="hidden md:block">
-					<NavLinks />
-				</nav>
+				<div className="flex items-center gap-2">
+					<nav className="hidden md:block">
+						<NavLinks />
+					</nav>
+					<SocialMediaLinks displayMode="desktop" />
+				</div>
 				<div className="block md:hidden">
 					<Sheet open={isOpen} onOpenChange={setIsOpen}>
 						<SheetTrigger asChild>

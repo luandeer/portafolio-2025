@@ -1,25 +1,21 @@
 import { Certificate } from '@/common/data/Certifications';
 import { Award, ZoomIn } from 'lucide-react';
 import Image from 'next/image';
-import { useCallback } from 'react';
+import { useCertificateModalStore } from '../../store/useCertificateModalStore';
 
-interface CertificateCardProps extends Certificate {
-	onClick: (cert: Certificate) => void;
-}
-
-export const CertificateCardComponent = ({
+export const ItemCarousel = ({
 	imageUrl,
 	title,
 	institution,
 	date,
 	type,
 	alt = 'Certificado',
-	onClick,
-}: CertificateCardProps) => {
-	const handleClick = useCallback(() => {
-		onClick({ imageUrl, title, institution, date, type, alt });
-	}, [imageUrl, title, institution, date, type, alt, onClick]);
+}: Certificate) => {
+	const openModal = useCertificateModalStore((state) => state.openModal);
 
+	const handleClick = () => {
+		openModal({ imageUrl, title, institution, date, type, alt });
+	};
 	return (
 		<button
 			onClick={handleClick}
