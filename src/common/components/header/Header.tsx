@@ -1,5 +1,5 @@
 'use client';
-import { Download, FolderCode, PawPrint } from 'lucide-react';
+import { FolderCode, PawPrint } from 'lucide-react';
 import Link from 'next/link';
 import { NavLinks } from './Nav';
 import {

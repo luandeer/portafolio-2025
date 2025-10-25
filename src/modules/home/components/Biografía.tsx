@@ -1,13 +1,4 @@
-import {
-	MapPin,
-	GraduationCap,
-	Code2,
-	Briefcase,
-	Globe,
-	Lightbulb,
-	Users,
-	Mail,
-} from 'lucide-react';
+import { MapPin, GraduationCap, Code2, Globe, Mail } from 'lucide-react';
 
 export default function Biography() {
 	const events = [

@@ -2,7 +2,7 @@
 
 import Autoscroll from 'embla-carousel-auto-scroll';
 import { cn } from '@/lib/utils';
-import { Certificate, CertificationsData } from '@/common/data/Certifications';
+import { CertificationsData } from '@/common/data/Certifications';
 import {
 	Carousel,
 	CarouselContent,

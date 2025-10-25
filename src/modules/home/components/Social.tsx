@@ -1,7 +1,6 @@
 'use client';
 
-import { ReactNode, useState } from 'react';
-import { cn } from '@/lib/utils';
+import { ReactNode } from 'react';
 import {
 	ChevronDown,
 	Github,
@@ -19,7 +18,6 @@ import {
 import {
 	Tooltip,
 	TooltipContent,
-	TooltipProvider,
 	TooltipTrigger,
 } from '@/common/components/ui/tooltip'; // 👈 Importa el tooltip
 
