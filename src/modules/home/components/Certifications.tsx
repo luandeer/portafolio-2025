@@ -87,7 +87,7 @@ export const CarouselCertifications = () => {
 									</Button>
 								</div>
 
-								<div className="grid grid-cols-[1fr_300px] w-full bg-[#f8f9fa] p-6 items-start justify-center gap-10">
+								<div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] w-full bg-[#f8f9fa] p-6 items-start justify-center gap-10">
 									<div className="relative w-full  aspect-video overflow-hidden  border border-gray-200 dark:border-gray-700 rounded-lg shadow bg-white dark:bg-gray-800">
 										<Image
 											src={selectedCertificate.imageUrl || '/placeholder.svg'}

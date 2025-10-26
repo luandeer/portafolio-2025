@@ -1,4 +1,5 @@
 // import { Banner1 } from '@/common/components/Banner';
+import MarioBanner from '@/common/components/BannerOficial';
 import {
 	Avatar,
 	AvatarFallback,
@@ -17,6 +18,8 @@ export default function Home() {
 	return (
 		<main className=" max-lg:px-4">
 			{/* <Banner1 /> */}
+			<MarioBanner />
+
 			<section className="flex flex-col-reverse gap-2 md:gap-6 md:flex-row-reverse items-start w-full mt-10 max-w-[740px] mx-auto mb-10">
 				<div className="flex-1 space-y-1 w-full">
 					<h1 className="font-bold text-3xl md:text-4xl text-white  leading-none flex items-end gap-2">
@@ -27,7 +30,7 @@ export default function Home() {
 					</h1>
 
 					<p className="max-w-[740px] text-sm md:text-base text-gray-300 mb-4">
-						Software Engineering.{' '}
+						Software Engineering.
 					</p>
 					<div className="flex flex-wrap items-center gap-2 md:gap-3">
 						<span className="flex items-center gap-1 text-sm md:text-base text-gray-300">

@@ -19,7 +19,7 @@ import {
 	Tooltip,
 	TooltipContent,
 	TooltipTrigger,
-} from '@/common/components/ui/tooltip'; // 👈 Importa el tooltip
+} from '@/common/components/ui/tooltip';
 
 interface SocialLink {
 	id: number;

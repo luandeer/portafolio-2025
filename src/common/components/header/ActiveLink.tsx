@@ -25,15 +25,14 @@ export const ActiveLink = ({
 		<Link
 			href={href}
 			className={clsx(
-				'flex h-auto grow items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium hover:bg-[#F08241] hover:text-white md:flex-none md:justify-start',
+				'flex h-7 grow items-center justify-center gap-2 border border-gray-400/30 rounded-md px-3 text-xs font-medium bg-gradient-to-b from-gray-500/20 to-gray-500/10 hover:text-white md:flex-none md:justify-start hover:bg-gray-900',
 				{
-					'bg-[#F08241] text-white hover:bg-[#F08241] hover:text-white':
-						isActive,
+					'bg-gray-900  rounded-md text-white hover:text-white': isActive,
 				}
 			)}
 		>
 			{/* Renderiza el icono si existe, de lo contrario usa un icono por defecto */}
-			{Icon ? <Icon size={20} /> : <></>}
+			{Icon ? <Icon size={16} /> : <></>}
 			<p className="hidden md:block">{name}</p>
 		</Link>
 	);

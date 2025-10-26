@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/common/components/header/Header';
 import Footer from '@/common/components/footer/Footer';
-import MarioBanner from '@/common/components/BannerOficial';
 import { TooltipProvider } from '@/common/components/ui/tooltip';
 
 const geistSans = Geist({
@@ -32,10 +31,9 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen flex-col antialiased`}
 			>
 				<Header />
-				<div className="flex flex-col">
-					<MarioBanner />
-					<TooltipProvider delayDuration={0}>{children}</TooltipProvider>
-				</div>
+
+				<TooltipProvider delayDuration={0}>{children}</TooltipProvider>
+
 				<Footer />
 			</body>
 		</html>

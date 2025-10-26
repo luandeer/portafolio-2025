@@ -17,7 +17,7 @@ export default function Experiencie() {
 				<AccordionItem
 					key={index}
 					value={`item-${index}`}
-					className="relative border-b-0 group "
+					className="relative border-b-0 group last:overflow-hidden"
 				>
 					{/* Línea vertical */}
 					<div
@@ -61,7 +61,7 @@ export default function Experiencie() {
 						</div>
 					</AccordionTrigger>
 
-					<AccordionContent className="pl-[40px] ">
+					<AccordionContent className="pl-[40px]">
 						<p className="text-sm text-gray-400 mb-3 whitespace-pre-line">
 							{event.summary}
 						</p>
