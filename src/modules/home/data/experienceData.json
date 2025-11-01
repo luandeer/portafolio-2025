@@ -1,163 +1,148 @@
 [
-	{
-		"year": "Junio 2025 – presente",
-		"role": "Full Stack Developer",
-		"company": "PlayGroup Latam",
-		"link": "https://playgrouplatam.com/",
-		"image": "/play.jpg",
-		"summary": "Desarrollo soluciones para e-commerce y aplicaciones web de la empresa, abarcando frontend y backend con tecnologías modernas.",
-		"responsibilities": [
-			"Diseño y desarrollo de interfaces con Next.js, Tailwind CSS y Shadcn UI.",
-			"Implementación de APIs RESTful y controladores con Laravel 12.",
-			"Optimización de rendimiento y accesibilidad web.",
-			"Despliegue y gestión de entornos en Google Cloud Platform ",
-			"Colaboración con el equipo de diseño UX/UI"
-		],
-		"projects": [
-			{
-				"name": "Darysa(E-commerce)",
-				"description": "Desarrollo completo del e-commerce de la marca Darysa, desde la definición de la arquitectura técnica hasta la implementación del frontend, backend, base de datos y pasarelas de pago. La solución permite una gestión eficiente del catálogo, un flujo de compra optimizado y una experiencia de usuario fluida.",
-				"technologies": ["Next.js", "Laravel 12", "Tailwind CSS", "MySQL"]
-			},
-			{
-				"name": "PlayGroup(Web corporativa)",
-				"description": "Participo en el frontend del sitio web de la empresa, mejorando la consistencia visual, la mantenibilidad del código y la experiencia del usuario a través de componentes reutilizables.",
-				"technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn UI"]
-			}
-		],
-		"achievements": [
-			"Establecí una base sólida de componentes reutilizables y escalables en el frontend, mejorando la eficiencia del desarrollo y la coherencia visual entre proyectos.",
-			"Colaboré con el equipo de diseño para garantizar la correcta implementación de interfaces de UX/UI, asegurando consistencia visual y accesibilidad en todos los dispositivos.",
-			"Implementé integraciones con servicios en la nube en Google Cloud Platform."
-		],
-		"tags": [
-			"Next.js",
-			"React js",
-			"Laravel 12",
-			"TypeScript",
-			"Tailwind CSS",
-			"Shadcn UI",
-			"Google Cloud Platform",
-			"MySQL",
-			"Vercel",
-			"Git/GitHub"
-		]
-	},
+  {
+    "year": "Junio 2025 – presente",
+    "role": "Full Stack Developer",
+    "company": "PlayGroup Latam",
+    "link": "https://playgrouplatam.com/",
+    "image": "/play.jpg",
+    "summary": "Desarrollo soluciones para e-commerce y aplicaciones web de la empresa, abarcando frontend y backend con tecnologías modernas.",
+    "responsibilities": [
+      "Diseño y desarrollo de interfaces con Next.js, Tailwind CSS y Shadcn UI.",
+      "Implementación de APIs RESTful y controladores con Laravel 12.",
+      "Optimización de rendimiento y accesibilidad web.",
+      "Despliegue y gestión de entornos en Google Cloud Platform ",
+      "Colaboración con el equipo de diseño UX/UI"
+    ],
+    "projects": [
+      {
+        "name": "Darysa(E-commerce)",
+        "description": "Desarrollo completo del e-commerce de la marca Darysa, desde la definición de la arquitectura técnica hasta la implementación del frontend, backend, base de datos y pasarelas de pago. La solución permite una gestión eficiente del catálogo, un flujo de compra optimizado y una experiencia de usuario fluida.",
+        "technologies": ["Next.js", "Laravel 12", "Tailwind CSS", "MySQL"]
+      },
+      {
+        "name": "PlayGroup(Web corporativa)",
+        "description": "Participo en el frontend del sitio web de la empresa, mejorando la consistencia visual, la mantenibilidad del código y la experiencia del usuario a través de componentes reutilizables.",
+        "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Shadcn UI"]
+      }
+    ],
+    "achievements": [
+      "Establecí una base sólida de componentes reutilizables y escalables en el frontend, mejorando la eficiencia del desarrollo y la coherencia visual entre proyectos.",
+      "Colaboré con el equipo de diseño para garantizar la correcta implementación de interfaces de UX/UI, asegurando consistencia visual y accesibilidad en todos los dispositivos.",
+      "Implementé integraciones con servicios en la nube en Google Cloud Platform."
+    ],
+    "tags": [
+      "Next.js",
+      "React js",
+      "Laravel 12",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Google Cloud Platform",
+      "MySQL",
+      "Vercel",
+      "Git/GitHub"
+    ]
+  },
 
-	{
-		"year": "Noviembre 2024 – Febrero 2025",
-		"role": "Frontend Developer",
-		"company": "Nerd",
-		"link": "https://nerd.pe",
-		"image": "/nerd.jpg",
-		"summary": "Desarrollé interfaces web responsivas y dinámicas para proyectos de e-commerce, inmobiliarias, etc.",
-		"responsibilities": [
-			"Maquetación con Tailwind CSS y componentes reutilizables.",
-			"Implementación de mailing templates en HTML y CSS.",
-			"Optimización de interfaces para SEO y rendimiento.",
-			"Colaboración con diseñadores y QA para asegurar la calidad visual del producto."
-		],
-		"projects": [
-			{
-				"name": "Bluhouse(inmobiliaria)",
-				"description": "Sitio web para la promoción y venta de inmuebles con filtros dinámicos y formularios integrados.",
-				"technologies": ["JavaScript", "Tailwind CSS", "HTML", "Vercel"]
-			},
-			{
-				"name": "Grupo Cala(web informativa)",
-				"description": "Desarrollo de un sitio web corporativo para la presentación de productos de limpieza en tres países, con una estructura adaptable que permite mostrar distintos catálogos y contenidos según cada mercado.",
-				"technologies": ["JavaScript", "Tailwind CSS", "HTML", "Vercel"]
-			}
-		],
-		"achievements": [
-			"Definí e implementé la arquitectura frontend con un enfoque modular y escalable, garantizando la mantenibilidad a largo plazo.",
-			"Refactoricé componentes y estilos con Tailwind CSS, estandarizando patrones visuales y reduciendo la duplicación de código en un 30%.",
-			"Optimicé el rendimiento del sitio mediante lazy loading, optimización de imágenes y división de bundles, mejorando los tiempos de carga y las métricas de Core Web Vitals."
-		],
-		"tags": [
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"Tailwind CSS",
-			"Vercel",
-			"Git/GitHub"
-		]
-	},
+  {
+    "year": "Noviembre 2024 – Febrero 2025",
+    "role": "Frontend Developer",
+    "company": "Nerd",
+    "link": "https://nerd.pe",
+    "image": "/nerd.jpg",
+    "summary": "Desarrollé interfaces web responsivas y dinámicas para proyectos de e-commerce, inmobiliarias, etc.",
+    "responsibilities": [
+      "Maquetación con Tailwind CSS y componentes reutilizables.",
+      "Implementación de mailing templates en HTML y CSS.",
+      "Optimización de interfaces para SEO y rendimiento.",
+      "Colaboración con diseñadores y QA para asegurar la calidad visual del producto."
+    ],
+    "projects": [
+      {
+        "name": "Bluhouse(inmobiliaria)",
+        "description": "Sitio web para la promoción y venta de inmuebles con filtros dinámicos y formularios integrados.",
+        "technologies": ["JavaScript", "Tailwind CSS", "HTML", "Vercel"]
+      },
+      {
+        "name": "Grupo Cala(web informativa)",
+        "description": "Desarrollo de un sitio web corporativo para la presentación de productos de limpieza en tres países, con una estructura adaptable que permite mostrar distintos catálogos y contenidos según cada mercado.",
+        "technologies": ["JavaScript", "Tailwind CSS", "HTML", "Vercel"]
+      }
+    ],
+    "achievements": [
+      "Definí e implementé la arquitectura frontend con un enfoque modular y escalable, garantizando la mantenibilidad a largo plazo.",
+      "Refactoricé componentes y estilos con Tailwind CSS, estandarizando patrones visuales y reduciendo la duplicación de código en un 30%.",
+      "Optimicé el rendimiento del sitio mediante lazy loading, optimización de imágenes y división de bundles, mejorando los tiempos de carga y las métricas de Core Web Vitals."
+    ],
+    "tags": ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Vercel", "Git/GitHub"]
+  },
 
-	{
-		"year": "Julio 2024 – Septiembre 2024",
-		"role": "Frontend Intern",
-		"company": "EDteam",
-		"link": "https://ed.team",
-		"image": "/edteam.jpg",
-		"summary": "Práctica preprofesional en el equipo de desarrollo frontend, contribuyendo a mejoras visuales y funcionales de la plataforma educativa.",
-		"responsibilities": [
-			"Desarrollo de componentes reutilizables en React y Next.js.",
-			"Refactorización de módulos existentes según estándares internos.",
-			"Pruebas de usabilidad y QA antes del despliegue.",
-			"Documentación de nuevas funcionalidades y flujos."
-		],
-		"projects": [
-			{
-				"name": "Refactor del módulo de cursos",
-				"description": "Actualización completa del módulo de visualización de cursos, mejorando el rendimiento y la UX.",
-				"technologies": ["React", "Next.js", "Tailwind CSS"]
-			}
-		],
-		"achievements": [
-			"Aprendí e implementé buenas prácticas de desarrollo en entornos de producción con React y Next.js.",
-			"Refactoricé componentes y módulos siguiendo convenciones internas, mejorando la legibilidad y mantenibilidad del código.",
-			"Contribuí a la mejora del rendimiento del módulo de cursos, optimizando procesos de renderizado y manejo de datos.",
-			"Documenté flujos y componentes nuevos para facilitar la integración de futuros desarrolladores al proyecto."
-		],
-		"tags": [
-			"React",
-			"Next.js",
-			"Tailwind CSS",
-			"GitLab",
-			"TypeScript",
-			"React Query",
-			"Zustand"
-		]
-	},
+  {
+    "year": "Julio 2024 – Septiembre 2024",
+    "role": "Frontend Intern",
+    "company": "EDteam",
+    "link": "https://ed.team",
+    "image": "/edteam.jpg",
+    "summary": "Práctica preprofesional en el equipo de desarrollo frontend, contribuyendo a mejoras visuales y funcionales de la plataforma educativa.",
+    "responsibilities": [
+      "Desarrollo de componentes reutilizables en React y Next.js.",
+      "Refactorización de módulos existentes según estándares internos.",
+      "Pruebas de usabilidad y QA antes del despliegue.",
+      "Documentación de nuevas funcionalidades y flujos."
+    ],
+    "projects": [
+      {
+        "name": "Refactor del módulo de cursos",
+        "description": "Actualización completa del módulo de visualización de cursos, mejorando el rendimiento y la UX.",
+        "technologies": ["React", "Next.js", "Tailwind CSS"]
+      }
+    ],
+    "achievements": [
+      "Aprendí e implementé buenas prácticas de desarrollo en entornos de producción con React y Next.js.",
+      "Refactoricé componentes y módulos siguiendo convenciones internas, mejorando la legibilidad y mantenibilidad del código.",
+      "Contribuí a la mejora del rendimiento del módulo de cursos, optimizando procesos de renderizado y manejo de datos.",
+      "Documenté flujos y componentes nuevos para facilitar la integración de futuros desarrolladores al proyecto."
+    ],
+    "tags": ["React", "Next.js", "Tailwind CSS", "GitLab", "TypeScript", "React Query", "Zustand"]
+  },
 
-	{
-		"year": "Abril 2023 – Mayo 2024",
-		"role": "Junior Software Engineer",
-		"company": "Sonqu",
-		"image": "/experiencia/sonqulogo.png",
-		"summary": "Desarrollé módulos clave del dashboard administrativo y funcionalidades de autenticación para la aplicación web Sonqu.",
-		"responsibilities": [
-			"Reduje las peticiones innecesarias del dashboard mediante caching selectivo y manejo optimizado de estados con React Query.",
-			"Refactoricé componentes clave del panel administrativo, mejorando su composición y reduciendo la duplicidad de código.",
-			"Implementé autenticación basada en tokens con Auth.js, integrando validaciones de sesión y control de acceso.",
-			"Contribuí a establecer una arquitectura modular basada en hooks y stores de Zustand para un manejo de estado más eficiente."
-		],
-		"projects": [
-			{
-				"name": "Panel administrativo",
-				"description": "Dashboard interno para gestionar recetas, categorías y usuarios.",
-				"technologies": ["React", "Next.js", "Tailwind CSS"]
-			},
-			{
-				"name": "Sistema de autenticación",
-				"description": "Implementación de login seguro y gestión de sesiones con Auth.js.",
-				"technologies": ["Auth.js", "Next.js", "TypeScript"]
-			}
-		],
-		"achievements": [
-			"Mejoré la eficiencia del dashboard reduciendo las consultas innecesarias con React Query.",
-			"Diseñé un sistema modular de componentes que facilitó el mantenimiento futuro."
-		],
-		"tags": [
-			"React",
-			"Auth.js",
-			"TypeScript",
-			"Next.js",
-			"Tailwind CSS",
-			"GitHub",
-			"React Query",
-			"Zustand"
-		]
-	}
+  {
+    "year": "Abril 2023 – Mayo 2024",
+    "role": "Junior Software Engineer",
+    "company": "Sonqu",
+    "image": "/experiencia/sonqulogo.png",
+    "summary": "Desarrollé módulos clave del dashboard administrativo y funcionalidades de autenticación para la aplicación web Sonqu.",
+    "responsibilities": [
+      "Reduje las peticiones innecesarias del dashboard mediante caching selectivo y manejo optimizado de estados con React Query.",
+      "Refactoricé componentes clave del panel administrativo, mejorando su composición y reduciendo la duplicidad de código.",
+      "Implementé autenticación basada en tokens con Auth.js, integrando validaciones de sesión y control de acceso.",
+      "Contribuí a establecer una arquitectura modular basada en hooks y stores de Zustand para un manejo de estado más eficiente."
+    ],
+    "projects": [
+      {
+        "name": "Panel administrativo",
+        "description": "Dashboard interno para gestionar recetas, categorías y usuarios.",
+        "technologies": ["React", "Next.js", "Tailwind CSS"]
+      },
+      {
+        "name": "Sistema de autenticación",
+        "description": "Implementación de login seguro y gestión de sesiones con Auth.js.",
+        "technologies": ["Auth.js", "Next.js", "TypeScript"]
+      }
+    ],
+    "achievements": [
+      "Mejoré la eficiencia del dashboard reduciendo las consultas innecesarias con React Query.",
+      "Diseñé un sistema modular de componentes que facilitó el mantenimiento futuro."
+    ],
+    "tags": [
+      "React",
+      "Auth.js",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "GitHub",
+      "React Query",
+      "Zustand"
+    ]
+  }
 ]

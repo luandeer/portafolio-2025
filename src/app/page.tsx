@@ -2,7 +2,7 @@
 import MarioBanner from '@/common/components/BannerOficial';
 import { Avatar, AvatarFallback, AvatarImage } from '@/common/components/ui/avatar';
 
-import Biography from '@/modules/home/components/Biografía';
+import Biography from '@/modules/home/components/Biography';
 import ButtonPortafolio from '@/modules/home/components/ButtonPortafolio';
 import { CarouselCertifications } from '@/modules/home/components/Certifications';
 import Education from '@/modules/home/components/Education';

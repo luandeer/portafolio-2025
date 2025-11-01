@@ -1,868 +1,870 @@
 .banner {
-	width: 100%;
-	/* max-width: 4xl; */
-	height: 256px;
-	margin: 0 auto;
-	overflow: hidden;
-	/* border-radius: 1rem; */
-	position: relative;
-	background: linear-gradient(to bottom, #5ebaff 0%, #3b8cff 100%);
-	will-change: transform;
+  width: 100%;
+  /* max-width: 4xl; */
+  height: 256px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border-radius: 1rem; */
+  position: relative;
+  background: linear-gradient(to bottom, #5ebaff 0%, #3b8cff 100%);
+  will-change: transform;
 }
 
 /* Sky and clouds */
 .sky {
-	position: absolute;
-	inset: 0;
+  position: absolute;
+  inset: 0;
 }
 
 .cloud {
-	position: absolute;
-	width: 64px;
-	height: 32px;
-	background-color: white;
-	border-radius: 16px;
-	will-change: transform;
+  position: absolute;
+  width: 64px;
+  height: 32px;
+  background-color: white;
+  border-radius: 16px;
+  will-change: transform;
 }
 
 .cloud::before,
 .cloud::after {
-	content: '';
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	background-color: white;
-	border-radius: 50%;
-	top: -16px;
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  top: -16px;
 }
 
 .cloud::before {
-	left: 8px;
+  left: 8px;
 }
 
 .cloud::after {
-	right: 8px;
+  right: 8px;
 }
 
 .cloud1 {
-	top: 15%;
-	left: 10%;
-	animation: floatCloud 20s infinite ease-in-out;
+  top: 15%;
+  left: 10%;
+  animation: floatCloud 20s infinite ease-in-out;
 }
 
 .cloud2 {
-	top: 25%;
-	left: 40%;
-	animation: floatCloud 25s infinite ease-in-out 5s;
+  top: 25%;
+  left: 40%;
+  animation: floatCloud 25s infinite ease-in-out 5s;
 }
 
 .cloud3 {
-	top: 10%;
-	left: 70%;
-	animation: floatCloud 18s infinite ease-in-out 2s;
+  top: 10%;
+  left: 70%;
+  animation: floatCloud 18s infinite ease-in-out 2s;
 }
 
 @keyframes floatCloud {
-	0%,
-	100% {
-		transform: translate(0, 0);
-	}
-	50% {
-		transform: translate(30px, 10px);
-	}
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, 10px);
+  }
 }
 
 /* Hills */
 .hills {
-	position: absolute;
-	bottom: 64px;
-	width: 100%;
+  position: absolute;
+  bottom: 64px;
+  width: 100%;
 }
 
 .hill {
-	position: absolute;
-	width: 120px;
-	height: 80px;
-	background-color: #4ade80;
-	border-radius: 50% 50% 0 0;
-	bottom: 0;
-	transform: translateX(-50%);
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  background-color: #4ade80;
+  border-radius: 50% 50% 0 0;
+  bottom: 0;
+  transform: translateX(-50%);
 }
 
 /* Question blocks */
 .blocksContainer {
-	position: absolute;
-	top: 30%;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .questionBlock {
-	width: 48px;
-	height: 48px;
-	background-color: #fbbf24;
-	border: 2px solid #d97706;
-	border-radius: 4px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 24px;
-	font-weight: bold;
-	color: #d97706;
-	will-change: transform;
-	box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  width: 48px;
+  height: 48px;
+  background-color: #fbbf24;
+  border: 2px solid #d97706;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d97706;
+  will-change: transform;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .block1 {
-	animation: bounceBlock 2s infinite ease-in-out;
+  animation: bounceBlock 2s infinite ease-in-out;
 }
 
 .block2 {
-	animation: bounceBlock 2s infinite ease-in-out 0.6s;
+  animation: bounceBlock 2s infinite ease-in-out 0.6s;
 }
 
 .block3 {
-	animation: bounceBlock 2s infinite ease-in-out 1.2s;
+  animation: bounceBlock 2s infinite ease-in-out 1.2s;
 }
 
 @keyframes bounceBlock {
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-15px);
-	}
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 /* Pipes */
 .pipe {
-	position: absolute;
-	bottom: 64px;
-	width: 48px;
-	background-color: #22c55e;
-	border-top: 2px solid #16a34a;
-	border-right: 2px solid #16a34a;
-	box-shadow: inset -4px 0 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 64px;
+  width: 48px;
+  background-color: #22c55e;
+  border-top: 2px solid #16a34a;
+  border-right: 2px solid #16a34a;
+  box-shadow: inset -4px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .pipeTop {
-	position: absolute;
-	top: -16px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 64px;
-	height: 16px;
-	background-color: #22c55e;
-	border: 2px solid #16a34a;
-	box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 16px;
+  background-color: #22c55e;
+  border: 2px solid #16a34a;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Ground - fixed symmetry */
 .ground {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 64px;
-	background-color: #92400e;
-	display: flex;
-	flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #92400e;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .brick {
-	width: calc(100% / 12);
-	height: 32px;
-	border-top: 2px solid #7c2d12;
-	border-right: 2px solid #7c2d12;
-	box-sizing: border-box;
+  width: calc(100% / 12);
+  height: 32px;
+  border-top: 2px solid #7c2d12;
+  border-right: 2px solid #7c2d12;
+  box-sizing: border-box;
 }
 
 /* Coins */
 .coin {
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	background-color: #fbbf24;
-	border: 2px solid #d97706;
-	border-radius: 50%;
-	will-change: transform;
-	box-shadow: 0 0 10px rgba(251, 191, 36, 0.6);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #fbbf24;
+  border: 2px solid #d97706;
+  border-radius: 50%;
+  will-change: transform;
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.6);
 }
 
 .coin1 {
-	bottom: 100px;
-	left: 15%;
-	animation: spinCoin 1.5s infinite linear;
+  bottom: 100px;
+  left: 15%;
+  animation: spinCoin 1.5s infinite linear;
 }
 
 .coin2 {
-	bottom: 120px;
-	left: 35%;
-	animation: spinCoin 1.5s infinite linear 0.3s;
+  bottom: 120px;
+  left: 35%;
+  animation: spinCoin 1.5s infinite linear 0.3s;
 }
 
 .coin3 {
-	bottom: 90px;
-	left: 55%;
-	animation: spinCoin 1.5s infinite linear 0.6s;
+  bottom: 90px;
+  left: 55%;
+  animation: spinCoin 1.5s infinite linear 0.6s;
 }
 
 .coin4 {
-	bottom: 110px;
-	left: 75%;
-	animation: spinCoin 1.5s infinite linear 0.9s;
+  bottom: 110px;
+  left: 75%;
+  animation: spinCoin 1.5s infinite linear 0.9s;
 }
 
 .coin5 {
-	bottom: 130px;
-	left: 85%;
-	animation: spinCoin 1.5s infinite linear 1.2s;
+  bottom: 130px;
+  left: 85%;
+  animation: spinCoin 1.5s infinite linear 1.2s;
 }
 
 @keyframes spinCoin {
-	0% {
-		transform: scale(1) rotateY(0);
-	}
-	50% {
-		transform: scale(0.8) rotateY(180deg);
-	}
-	100% {
-		transform: scale(1) rotateY(360deg);
-	}
+  0% {
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    transform: scale(0.8) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+  }
 }
 
 /* Luigi character - improved */
 .luigi {
-	position: absolute;
-	bottom: 64px;
-	width: 48px;
-	height: 64px;
-	will-change: transform;
-	transition: transform 0.1s ease-out;
+  position: absolute;
+  bottom: 64px;
+  width: 48px;
+  height: 64px;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
 }
 
 .luigiHead {
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	background-color: #ffccaa;
-	border-radius: 50%;
-	top: -24px;
-	left: 50%;
-	transform: translateX(-50%);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: #ffccaa;
+  border-radius: 50%;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .luigiCap {
-	position: absolute;
-	width: 36px;
-	height: 12px;
-	background-color: #22c55e;
-	top: -20px;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 50% 50% 0 0;
-	z-index: 1;
+  position: absolute;
+  width: 36px;
+  height: 12px;
+  background-color: #22c55e;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
 }
 
 .luigiCap::before {
-	content: '';
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	background-color: #22c55e;
-	border-radius: 50%;
-	top: -8px;
-	left: 10px;
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  top: -8px;
+  left: 10px;
 }
 
 .luigiCap::after {
-	content: 'L';
-	position: absolute;
-	color: white;
-	font-size: 12px;
-	font-weight: bold;
-	top: -4px;
-	left: 14px;
+  content: 'L';
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  top: -4px;
+  left: 14px;
 }
 
 .luigiMustache {
-	position: absolute;
-	width: 24px;
-	height: 6px;
-	background-color: #4b5563;
-	border-radius: 3px;
-	top: -8px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 2;
+  position: absolute;
+  width: 24px;
+  height: 6px;
+  background-color: #4b5563;
+  border-radius: 3px;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .luigiBody {
-	width: 100%;
-	height: 32px;
-	background-color: #22c55e;
-	border-radius: 4px;
+  width: 100%;
+  height: 32px;
+  background-color: #22c55e;
+  border-radius: 4px;
 }
 
 .luigiOverall {
-	position: absolute;
-	width: 32px;
-	height: 24px;
-	background-color: #3b82f6;
-	border-radius: 4px 4px 0 0;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
+  position: absolute;
+  width: 32px;
+  height: 24px;
+  background-color: #3b82f6;
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .luigiOverall::before,
 .luigiOverall::after {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	background-color: #fbbf24;
-	border-radius: 50%;
-	top: 4px;
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #fbbf24;
+  border-radius: 50%;
+  top: 4px;
 }
 
 .luigiOverall::before {
-	left: 6px;
+  left: 6px;
 }
 
 .luigiOverall::after {
-	right: 6px;
+  right: 6px;
 }
 
 .luigiArmLeft,
 .luigiArmRight {
-	position: absolute;
-	width: 8px;
-	height: 20px;
-	background-color: #22c55e;
-	top: 8px;
-	border-radius: 4px;
-	transform-origin: top center;
-	transition: transform 0.2s ease-out;
+  position: absolute;
+  width: 8px;
+  height: 20px;
+  background-color: #22c55e;
+  top: 8px;
+  border-radius: 4px;
+  transform-origin: top center;
+  transition: transform 0.2s ease-out;
 }
 
 .luigiArmLeft {
-	left: 6px;
+  left: 6px;
 }
 
 .luigiArmRight {
-	right: 6px;
+  right: 6px;
 }
 
 .luigi[data-walk-cycle='1'] .luigiArmLeft {
-	transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .luigi[data-walk-cycle='0'] .luigiArmLeft {
-	transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .luigi[data-walk-cycle='1'] .luigiArmRight {
-	transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .luigi[data-walk-cycle='0'] .luigiArmRight {
-	transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .luigiLegLeft,
 .luigiLegRight {
-	position: absolute;
-	width: 12px;
-	height: 24px;
-	background-color: #3b82f6;
-	bottom: 0;
-	transition: height 0.2s ease-out, transform 0.2s ease-out;
+  position: absolute;
+  width: 12px;
+  height: 24px;
+  background-color: #3b82f6;
+  bottom: 0;
+  transition:
+    height 0.2s ease-out,
+    transform 0.2s ease-out;
 }
 
 .luigiLegLeft {
-	left: 8px;
+  left: 8px;
 }
 
 .luigiLegRight {
-	right: 8px;
+  right: 8px;
 }
 
 .luigi[data-walk-cycle='1'] .luigiLegLeft {
-	height: 20px;
-	transform: translateY(4px);
+  height: 20px;
+  transform: translateY(4px);
 }
 
 .luigi[data-walk-cycle='1'] .luigiLegRight {
-	height: 24px;
+  height: 24px;
 }
 
 .luigi[data-walk-cycle='0'] .luigiLegLeft {
-	height: 24px;
+  height: 24px;
 }
 
 .luigi[data-walk-cycle='0'] .luigiLegRight {
-	height: 20px;
-	transform: translateY(4px);
+  height: 20px;
+  transform: translateY(4px);
 }
 
 /* Goomba character - improved */
 .goomba {
-	position: absolute;
-	bottom: 64px;
-	width: 48px;
-	height: 48px;
-	will-change: transform;
+  position: absolute;
+  bottom: 64px;
+  width: 48px;
+  height: 48px;
+  will-change: transform;
 }
 
 .goombaBody {
-	position: absolute;
-	width: 48px;
-	height: 40px;
-	background-color: #92400e;
-	border-radius: 24px 24px 0 0;
-	bottom: 0;
-	box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 48px;
+  height: 40px;
+  background-color: #92400e;
+  border-radius: 24px 24px 0 0;
+  bottom: 0;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .goombaFace {
-	position: absolute;
-	width: 40px;
-	height: 20px;
-	background-color: #ffccaa;
-	border-radius: 20px 20px 0 0;
-	bottom: 0;
-	left: 4px;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-color: #ffccaa;
+  border-radius: 20px 20px 0 0;
+  bottom: 0;
+  left: 4px;
 }
 
 .goombaEyebrowLeft,
 .goombaEyebrowRight {
-	position: absolute;
-	width: 12px;
-	height: 4px;
-	background-color: black;
-	border-radius: 2px;
-	top: 12px;
-	transform: rotate(-15deg);
+  position: absolute;
+  width: 12px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  top: 12px;
+  transform: rotate(-15deg);
 }
 
 .goombaEyebrowLeft {
-	left: 8px;
+  left: 8px;
 }
 
 .goombaEyebrowRight {
-	right: 8px;
-	transform: rotate(15deg);
+  right: 8px;
+  transform: rotate(15deg);
 }
 
 .goombaFace::before,
 .goombaFace::after {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	background-color: black;
-	border-radius: 50%;
-	top: 16px;
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  top: 16px;
 }
 
 .goombaFace::before {
-	left: 8px;
+  left: 8px;
 }
 
 .goombaFace::after {
-	right: 8px;
+  right: 8px;
 }
 
 .goombaLegLeft,
 .goombaLegRight {
-	position: absolute;
-	width: 12px;
-	height: 8px;
-	background-color: #7c2d12;
-	bottom: 0;
-	border-radius: 0 0 6px 6px;
-	transition: transform 0.2s ease-out;
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-color: #7c2d12;
+  bottom: 0;
+  border-radius: 0 0 6px 6px;
+  transition: transform 0.2s ease-out;
 }
 
 .goombaLegLeft {
-	left: 8px;
+  left: 8px;
 }
 
 .goombaLegRight {
-	right: 8px;
+  right: 8px;
 }
 
 .goomba[data-cycle='0'] .goombaLegLeft {
-	transform: translateY(0);
+  transform: translateY(0);
 }
 
 .goomba[data-cycle='0'] .goombaLegRight {
-	transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .goomba[data-cycle='1'] .goombaLegLeft {
-	transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .goomba[data-cycle='1'] .goombaLegRight {
-	transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* Toad character */
 .toad {
-	position: absolute;
-	bottom: 64px;
-	left: 40%;
-	width: 48px;
-	height: 64px;
-	will-change: transform;
-	animation: toadIdle 2s infinite ease-in-out;
+  position: absolute;
+  bottom: 64px;
+  left: 40%;
+  width: 48px;
+  height: 64px;
+  will-change: transform;
+  animation: toadIdle 2s infinite ease-in-out;
 }
 
 .toadCap {
-	position: absolute;
-	width: 40px;
-	height: 24px;
-	background-color: white;
-	border-radius: 20px 20px 0 0;
-	top: -24px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
+  position: absolute;
+  width: 40px;
+  height: 24px;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .toadCapDot {
-	position: absolute;
-	width: 12px;
-	height: 12px;
-	background-color: #ef4444;
-	border-radius: 50%;
-	top: 4px;
-	left: 8px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  top: 4px;
+  left: 8px;
 }
 
 .toadFace {
-	position: absolute;
-	width: 32px;
-	height: 24px;
-	background-color: #ffccaa;
-	border-radius: 16px;
-	top: -12px;
-	left: 50%;
-	transform: translateX(-50%);
+  position: absolute;
+  width: 32px;
+  height: 24px;
+  background-color: #ffccaa;
+  border-radius: 16px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .toadFace::before,
 .toadFace::after {
-	content: '';
-	position: absolute;
-	width: 6px;
-	height: 6px;
-	background-color: black;
-	border-radius: 50%;
-	top: 8px;
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  top: 8px;
 }
 
 .toadFace::before {
-	left: 6px;
+  left: 6px;
 }
 
 .toadFace::after {
-	right: 6px;
+  right: 6px;
 }
 
 .toadBody {
-	width: 32px;
-	height: 32px;
-	background-color: #3b82f6;
-	border-radius: 16px 16px 0 0;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background-color: #3b82f6;
+  border-radius: 16px 16px 0 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .toadBody::before {
-	content: '';
-	position: absolute;
-	width: 24px;
-	height: 8px;
-	background-color: white;
-	border-radius: 4px;
-	top: 12px;
-	left: 4px;
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 8px;
+  background-color: white;
+  border-radius: 4px;
+  top: 12px;
+  left: 4px;
 }
 
 .toadLegLeft,
 .toadLegRight {
-	position: absolute;
-	width: 12px;
-	height: 16px;
-	background-color: white;
-	bottom: 0;
-	border-radius: 6px 6px 0 0;
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  background-color: white;
+  bottom: 0;
+  border-radius: 6px 6px 0 0;
 }
 
 .toadLegLeft {
-	left: 8px;
-	animation: toadLegLeft 1s infinite alternate ease-in-out;
+  left: 8px;
+  animation: toadLegLeft 1s infinite alternate ease-in-out;
 }
 
 .toadLegRight {
-	right: 8px;
-	animation: toadLegRight 1s infinite alternate-reverse ease-in-out;
+  right: 8px;
+  animation: toadLegRight 1s infinite alternate-reverse ease-in-out;
 }
 
 .toadArmLeft,
 .toadArmRight {
-	position: absolute;
-	width: 8px;
-	height: 16px;
-	background-color: #3b82f6;
-	top: 8px;
-	border-radius: 4px;
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  background-color: #3b82f6;
+  top: 8px;
+  border-radius: 4px;
 }
 
 .toadArmLeft {
-	left: 4px;
-	transform-origin: top center;
-	animation: toadArmWave 2s infinite ease-in-out;
+  left: 4px;
+  transform-origin: top center;
+  animation: toadArmWave 2s infinite ease-in-out;
 }
 
 .toadArmRight {
-	right: 4px;
+  right: 4px;
 }
 
 @keyframes toadIdle {
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-4px);
-	}
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes toadLegLeft {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-2px);
-	}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
 }
 
 @keyframes toadLegRight {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-2px);
-	}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
 }
 
 @keyframes toadArmWave {
-	0%,
-	100% {
-		transform: rotate(0);
-	}
-	25% {
-		transform: rotate(-20deg);
-	}
-	75% {
-		transform: rotate(20deg);
-	}
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
 }
 
 /* Yoshi character - improved */
 .yoshi {
-	position: absolute;
-	bottom: 64px;
-	right: 15%;
-	width: 64px;
-	height: 64px;
-	will-change: transform;
-	animation: yoshiIdle 3s infinite ease-in-out;
+  position: absolute;
+  bottom: 64px;
+  right: 15%;
+  width: 64px;
+  height: 64px;
+  will-change: transform;
+  animation: yoshiIdle 3s infinite ease-in-out;
 }
 
 .yoshiHead {
-	position: absolute;
-	width: 40px;
-	height: 32px;
-	background-color: #4ade80;
-	border-radius: 20px 20px 10px 10px;
-	top: -20px;
-	left: 12px;
+  position: absolute;
+  width: 40px;
+  height: 32px;
+  background-color: #4ade80;
+  border-radius: 20px 20px 10px 10px;
+  top: -20px;
+  left: 12px;
 }
 
 .yoshiNose {
-	position: absolute;
-	width: 24px;
-	height: 16px;
-	background-color: white;
-	border-radius: 12px;
-	top: -12px;
-	left: 28px;
-	z-index: 2;
+  position: absolute;
+  width: 24px;
+  height: 16px;
+  background-color: white;
+  border-radius: 12px;
+  top: -12px;
+  left: 28px;
+  z-index: 2;
 }
 
 .yoshiEye {
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	background-color: white;
-	border-radius: 50%;
-	top: -16px;
-	left: 20px;
-	z-index: 1;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  top: -16px;
+  left: 20px;
+  z-index: 1;
 }
 
 .yoshiEye::after {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	background-color: black;
-	border-radius: 50%;
-	top: 4px;
-	left: 4px;
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
 }
 
 .yoshiBody {
-	position: absolute;
-	width: 48px;
-	height: 40px;
-	background-color: #4ade80;
-	border-radius: 24px 24px 0 0;
-	bottom: 0;
-	left: 8px;
+  position: absolute;
+  width: 48px;
+  height: 40px;
+  background-color: #4ade80;
+  border-radius: 24px 24px 0 0;
+  bottom: 0;
+  left: 8px;
 }
 
 .yoshiSaddle {
-	position: absolute;
-	width: 32px;
-	height: 16px;
-	background-color: #ef4444;
-	border-radius: 16px 16px 0 0;
-	bottom: 24px;
-	left: 16px;
+  position: absolute;
+  width: 32px;
+  height: 16px;
+  background-color: #ef4444;
+  border-radius: 16px 16px 0 0;
+  bottom: 24px;
+  left: 16px;
 }
 
 .yoshiShell {
-	position: absolute;
-	width: 24px;
-	height: 20px;
-	background-color: white;
-	border-radius: 12px;
-	bottom: 16px;
-	left: 4px;
-	border: 2px solid #ef4444;
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  background-color: white;
+  border-radius: 12px;
+  bottom: 16px;
+  left: 4px;
+  border: 2px solid #ef4444;
 }
 
 .yoshiLegLeft,
 .yoshiLegRight {
-	position: absolute;
-	width: 16px;
-	height: 24px;
-	background-color: #fef08a;
-	bottom: 0;
-	border-radius: 8px 8px 0 0;
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  background-color: #fef08a;
+  bottom: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .yoshiLegLeft {
-	left: 12px;
-	animation: yoshiLegLeft 1.5s infinite alternate ease-in-out;
+  left: 12px;
+  animation: yoshiLegLeft 1.5s infinite alternate ease-in-out;
 }
 
 .yoshiLegRight {
-	right: 12px;
-	animation: yoshiLegRight 1.5s infinite alternate-reverse ease-in-out;
+  right: 12px;
+  animation: yoshiLegRight 1.5s infinite alternate-reverse ease-in-out;
 }
 
 .yoshiArmLeft {
-	position: absolute;
-	width: 12px;
-	height: 20px;
-	background-color: #4ade80;
-	top: 8px;
-	left: 4px;
-	border-radius: 6px;
-	transform-origin: top center;
-	animation: yoshiArmWave 3s infinite ease-in-out;
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  background-color: #4ade80;
+  top: 8px;
+  left: 4px;
+  border-radius: 6px;
+  transform-origin: top center;
+  animation: yoshiArmWave 3s infinite ease-in-out;
 }
 
 @keyframes yoshiIdle {
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-5px);
-	}
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes yoshiLegLeft {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-4px);
-	}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes yoshiLegRight {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-4px);
-	}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes yoshiArmWave {
-	0%,
-	100% {
-		transform: rotate(0);
-	}
-	50% {
-		transform: rotate(20deg);
-	}
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
 }
 
 /* Welcome Text */
 .welcomeText {
-	position: absolute;
-	inset: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	animation: fadeIn 1s ease-out;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-out;
 }
 
 .welcomeText h1 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: white;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	background-color: rgba(0, 0, 0, 0.3);
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 768px) {
-	.welcomeText h1 {
-		font-size: 1.875rem;
-	}
+  .welcomeText h1 {
+    font-size: 1.875rem;
+  }
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-		transform: scale(0.8);
-	}
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
