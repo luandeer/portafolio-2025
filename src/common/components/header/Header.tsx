@@ -31,45 +31,45 @@ export const Header = () => {
             <NavLinks />
           </nav>
           <SocialMediaLinks displayMode="desktop" />
-        </div>
-        <div className="block md:hidden">
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button className="cursor-pointer bg-transparent p-0 text-white hover:bg-transparent">
-                Menú
-              </Button>
-            </SheetTrigger>
-            <SheetContent className="border-gray-700">
-              <SheetHeader>
-                <SheetTitle className="flex items-center gap-2 text-white">
-                  {' '}
-                  <PawPrint className="-rotate-90" />
-                  telmoalexander.
-                </SheetTitle>
-                <SheetDescription className="text-white">
-                  {
-                    'La ingeniería de software es el arte de hacer que lo imposible parezca sencillo.'
-                  }
-                </SheetDescription>
-              </SheetHeader>
-              <div className="grid gap-4 px-4 py-4">
-                <Link
-                  href="/proyectos"
-                  className="flex items-center gap-2 text-white underline underline-offset-8"
-                  onClick={closeModal}
-                >
-                  {' '}
-                  Ver proyectos <FolderCode />
-                </Link>
-              </div>
-              <SheetFooter>
-                <div className="text-gray-300">
-                  &copy;{' '}
-                  <span className="text-sm">{`${new Date().getFullYear()}`} telmoalexander.</span>
+          <div className="block md:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button className="cursor-pointer bg-transparent p-0 text-white hover:bg-transparent">
+                  Menú
+                </Button>
+              </SheetTrigger>
+              <SheetContent className="border-gray-700">
+                <SheetHeader>
+                  <SheetTitle className="flex items-center gap-2 text-white">
+                    {' '}
+                    <PawPrint className="-rotate-90" />
+                    telmoalexander.
+                  </SheetTitle>
+                  <SheetDescription className="text-white">
+                    {
+                      'La ingeniería de software es el arte de hacer que lo imposible parezca sencillo.'
+                    }
+                  </SheetDescription>
+                </SheetHeader>
+                <div className="grid gap-4 px-4 py-4">
+                  <Link
+                    href="/proyectos"
+                    className="flex items-center gap-2 text-white underline underline-offset-8"
+                    onClick={closeModal}
+                  >
+                    {' '}
+                    Ver proyectos <FolderCode />
+                  </Link>
                 </div>
-              </SheetFooter>
-            </SheetContent>
-          </Sheet>
+                <SheetFooter>
+                  <div className="text-gray-300">
+                    &copy;{' '}
+                    <span className="text-sm">{`${new Date().getFullYear()}`} telmoalexander.</span>
+                  </div>
+                </SheetFooter>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
