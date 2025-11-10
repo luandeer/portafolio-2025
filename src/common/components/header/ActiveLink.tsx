@@ -1,5 +1,5 @@
 import { IconProps } from '@/common/types/icon';
-import clsx from 'clsx';
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -19,16 +19,19 @@ export const ActiveLink = ({ name, href, icon: Icon, useIncludes = false }: Prop
   return (
     <Link
       href={href}
-      className={clsx(
-        'flex h-7 grow items-center justify-center gap-2 rounded-md border border-gray-400/30 bg-gradient-to-b from-gray-500/20 to-gray-500/10 px-3 text-xs font-medium hover:bg-gray-900 hover:text-white md:flex-none md:justify-start',
-        {
-          'rounded-md bg-gray-900 text-white hover:text-white': isActive,
-        }
+      className={cn(
+        'relative w-fit cursor-pointer text-sm font-medium text-gray-50 transition-colors',
+        // efecto base del subrayado animado
+        'after:absolute after:-bottom-1 after:left-1/2 after:h-px after:w-0 after:bg-gray-50 after:transition-all after:duration-300',
+        'hover:after:left-0 hover:after:w-full',
+        // estilos del estado activo
+        isActive && 'text-white after:left-0 after:w-full after:bg-gray-50'
       )}
     >
-      {/* Renderiza el icono si existe, de lo contrario usa un icono por defecto */}
-      {Icon ? <Icon size={16} /> : <></>}
-      <p className="hidden md:block">{name}</p>
+      <div className="flex items-center justify-center gap-2 text-xs font-medium">
+        {Icon && <Icon size={16} />}
+        <p className="hidden md:block">{name}</p>
+      </div>
     </Link>
   );
 };

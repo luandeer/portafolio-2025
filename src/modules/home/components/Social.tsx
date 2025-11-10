@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from '@/common/components/ui/dropdown-menu';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/common/components/ui/tooltip';
-import { ChevronDown, Github, Instagram, Linkedin, LinkIcon } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 import { ReactNode } from 'react';
 
@@ -32,12 +32,12 @@ const socialLinks: SocialLink[] = [
     icon: <Github className="size-4 text-gray-300" />,
     url: 'https://github.com/luandeer',
   },
-  {
-    id: 4,
-    label: 'Instagram',
-    icon: <Instagram className="size-4 text-gray-300" />,
-    url: 'https://www.instagram.com/alexanderpreg/',
-  },
+  // {
+  //   id: 4,
+  //   label: 'Instagram',
+  //   icon: <Instagram className="size-4 text-gray-300" />,
+  //   url: 'https://www.instagram.com/alexanderpreg/',
+  // },
 ];
 
 interface SocialMediaLinksProps {

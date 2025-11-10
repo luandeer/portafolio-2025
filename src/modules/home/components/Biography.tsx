@@ -1,15 +1,15 @@
-import { Code2, Globe, GraduationCap, Mail, MapPin } from 'lucide-react';
+import { Globe, GraduationCap, Mail } from 'lucide-react';
 
 export default function Biography() {
   const events = [
-    {
-      icon: <Code2 className="size-4 text-gray-300" />,
-      description: 'Software Engineering & Full Stack Developer',
-    },
-    {
-      icon: <MapPin className="size-4 text-gray-300" />,
-      description: 'Lima, Perú.',
-    },
+    // {
+    //   icon: <Code2 className="size-4 text-gray-300" />,
+    //   description: 'Software Engineering & Full Stack Developer',
+    // },
+    // {
+    //   icon: <MapPin className="size-4 text-gray-300" />,
+    //   description: 'Lima, Perú.',
+    // },
     {
       icon: <GraduationCap className="size-4 text-gray-300" />,
       description: 'Graduado en Ingeniería de Software (UNMSM)',

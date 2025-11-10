@@ -2,23 +2,23 @@
 import MarioBanner from '@/common/components/BannerOficial';
 import { Avatar, AvatarFallback, AvatarImage } from '@/common/components/ui/avatar';
 
-import Biography from '@/modules/home/components/Biography';
 import ButtonPortafolio from '@/modules/home/components/ButtonPortafolio';
 import { CarouselCertifications } from '@/modules/home/components/Certifications';
 import Education from '@/modules/home/components/Education';
 import Experiencie from '@/modules/home/components/Experiencie';
 import { GitHubContributions } from '@/modules/home/components/github-panel/GithubContributions';
-import { BadgeCheck, Download, Luggage } from 'lucide-react';
-import Link from 'next/link';
+import { SocialLinkCard } from '@/modules/home/components/SocialLinkCard';
+import { socialProfiles } from '@/modules/home/constants/social';
+import { BadgeCheck, Luggage } from 'lucide-react';
 export default function Home() {
   return (
     <main>
       {/* <Banner1 /> */}
       <MarioBanner />
 
-      <section className="mx-auto mt-10 mb-10 flex w-full max-w-[740px] flex-col-reverse items-start gap-2 max-lg:px-4 md:flex-row-reverse md:gap-6">
+      <section className="mx-auto mt-10 mb-10 flex w-full max-w-[740px] flex-col-reverse gap-2 max-lg:px-4 md:flex-row-reverse md:items-center md:gap-6">
         <div className="w-full flex-1 space-y-1">
-          <h1 className="flex items-end gap-2 text-3xl leading-none font-bold text-white md:text-4xl">
+          <h1 className="flex items-end gap-2 text-3xl font-bold text-white">
             <span className="leading-none">Telmo Alexander</span>
             <span>
               <BadgeCheck />
@@ -33,14 +33,6 @@ export default function Home() {
               <Luggage className="size-4 md:size-5" /> Disponible (pero con café ☕)
             </span>
             {/* <SocialMediaLinks displayMode="desktop" /> */}
-            <Link
-              href="/cv-alexanderpr.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 rounded-md border border-gray-600 px-2 py-0.5 text-sm text-gray-400 hover:bg-gray-800"
-            >
-              <Download className="size-4" /> CV
-            </Link>
           </div>
         </div>
         <Avatar className="size-28 border border-gray-700/60 md:size-32">
@@ -50,7 +42,6 @@ export default function Home() {
       </section>
 
       {/* hola mundo */}
-
       <section className="mx-auto mb-10 max-w-[740px] text-white max-lg:px-4">
         <h2 className="mb-4 text-lg underline decoration-3 underline-offset-8">¡Hola mundo!</h2>
         <p className="mb-6 text-justify text-gray-300">
@@ -59,12 +50,23 @@ export default function Home() {
           escalables que combinan rendimiento, diseño y funcionalidad. Disfruto optimizar procesos,
           escribir código limpio y transformar ideas en productos digitales que generan impacto. 🚀
         </p>
-
-        <Biography />
         <ButtonPortafolio />
       </section>
-
-      {/* bio */}
+      <section className="mx-auto mb-10 max-w-[740px] text-white max-lg:px-4">
+        {/* <Biography /> */}
+        <div className="grid w-full grid-cols-2 gap-2.5 lg:grid-cols-3">
+          {socialProfiles.map((profile) => (
+            <SocialLinkCard
+              key={profile.id}
+              id={profile.id}
+              name={profile.name}
+              handle={profile.handle}
+              icon={profile.icon}
+              url={profile.url}
+            />
+          ))}
+        </div>
+      </section>
 
       {/* contribuciones */}
 
@@ -73,11 +75,6 @@ export default function Home() {
           Contribuciones en el último año{' '}
         </h2>
         <GitHubContributions />
-      </section>
-      {/* Certifications*/}
-      <section className="mx-auto mb-10 w-full max-w-[740px] overflow-hidden text-white max-lg:px-4">
-        <h2 className="mb-6 text-lg underline decoration-3 underline-offset-8">Certificaciones</h2>
-        <CarouselCertifications />
       </section>
 
       {/* hobbies */}
@@ -101,6 +98,11 @@ export default function Home() {
       <section className="mx-auto mb-6 max-w-[740px] text-white max-lg:px-4 lg:mb-10">
         <h2 className="mb-4 text-lg underline decoration-3 underline-offset-8">Educación</h2>
         <Education />
+      </section>
+      {/* Certifications*/}
+      <section className="mx-auto mb-10 w-full max-w-[740px] overflow-hidden text-white max-lg:px-4">
+        <h2 className="mb-6 text-lg underline decoration-3 underline-offset-8">Certificaciones</h2>
+        <CarouselCertifications />
       </section>
     </main>
   );

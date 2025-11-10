@@ -1,6 +1,5 @@
 'use client';
-import SocialMediaLinks from '@/modules/home/components/Social';
-import { FolderCode, PawPrint } from 'lucide-react';
+import { Download } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Button } from '../ui/button';
@@ -20,17 +19,22 @@ export const Header = () => {
   // Función para cerrar el modal
   const closeModal = () => setIsOpen(false);
   return (
-    <header className="sticky top-0 z-40 w-full bg-black px-4 py-4 text-white backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full bg-neutral-950/40 px-4 py-4 text-white backdrop-blur-md">
       <div className="mx-auto flex max-w-[740px] items-center justify-between">
-        <Link href="/" className="group flex items-center gap-2">
-          <PawPrint className="-rotate-90 transition-all duration-300 ease-in-out group-hover:-rotate-45" />
-          alexanderpreg.
-        </Link>
-        <div className="flex items-center gap-2">
+        <Link href="/">@alexanderpreg</Link>
+        <div className="flex items-center gap-2 sm:gap-6">
           <nav className="hidden md:block">
             <NavLinks />
           </nav>
-          <SocialMediaLinks displayMode="desktop" />
+          {/* <SocialMediaLinks displayMode="desktop" /> */}
+          <Link
+            href="/cv-alexanderpr.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 rounded-md border border-gray-600 bg-gradient-to-b from-gray-500/20 to-gray-500/10 px-2 py-0.5 text-sm text-gray-400 hover:bg-slate-900"
+          >
+            <Download className="size-4" /> CV
+          </Link>
           <div className="block md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
@@ -42,8 +46,7 @@ export const Header = () => {
                 <SheetHeader>
                   <SheetTitle className="flex items-center gap-2 text-white">
                     {' '}
-                    <PawPrint className="-rotate-90" />
-                    telmoalexander.
+                    @alexanderpreg
                   </SheetTitle>
                   <SheetDescription className="text-white">
                     {
@@ -54,11 +57,11 @@ export const Header = () => {
                 <div className="grid gap-4 px-4 py-4">
                   <Link
                     href="/proyectos"
-                    className="flex items-center gap-2 text-white underline underline-offset-8"
+                    className="text-white underline underline-offset-8"
                     onClick={closeModal}
                   >
                     {' '}
-                    Ver proyectos <FolderCode />
+                    Ver proyectos
                   </Link>
                 </div>
                 <SheetFooter>
