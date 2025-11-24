@@ -50,9 +50,9 @@ export function HomeView() {
             />
           ))}
         </div>
-        <Heading as="h3" variant="subtitle" className="text-sm!">
+        <Heading as="h3" variant="subtitle" className="w-full text-sm!">
           O envíeme un correo electrónico a
-          <span className="ml-1 text-blue-400">alexanderperezreginaldo@gmail.com</span>
+          <span className="inline-flex pl-1 text-blue-400">alexanderperezreginaldo@gmail.com</span>
         </Heading>
       </Container>
 
