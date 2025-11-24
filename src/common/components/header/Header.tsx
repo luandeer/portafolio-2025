@@ -2,6 +2,7 @@
 import { Download } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Container } from '../customer-ui/Container';
 import { Button } from '../shadcn-ui/button';
 import {
   Sheet,
@@ -19,8 +20,8 @@ export const Header = () => {
   // Función para cerrar el modal
   const closeModal = () => setIsOpen(false);
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/40 px-4 py-4 text-white backdrop-blur-xs">
-      <div className="mx-auto flex max-w-[740px] items-center justify-between">
+    <header className="sticky top-0 z-40 w-full bg-neutral-950/40 py-4 text-white shadow-xs/20 shadow-white backdrop-blur-xs">
+      <Container size="container" className="flex items-center justify-between">
         <Link href="/">@alexanderpreg</Link>
         <div className="flex items-center gap-3 sm:gap-6">
           <nav className="hidden md:block">
@@ -75,7 +76,7 @@ export const Header = () => {
             </Sheet>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 };

@@ -14,9 +14,9 @@ import { cn } from '@/lib/utils';
 import Autoscroll from 'embla-carousel-auto-scroll';
 import { Award, X } from 'lucide-react';
 import Image from 'next/image';
-import { useCertificateModalStore } from '../store/useCertificateModalStore';
-import StyleCarousel from '../style/home.module.css';
-import { ItemCarousel } from './certification/ItemCarousel';
+import { useCertificateModalStore } from '../../store/useCertificateModalStore';
+import StyleCarousel from '../../style/home.module.css';
+import { ItemCarousel } from './ItemCarousel';
 
 export const CarouselCertifications = () => {
   const data = CertificationsData();

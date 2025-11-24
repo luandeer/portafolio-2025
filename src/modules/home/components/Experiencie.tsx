@@ -38,7 +38,7 @@ export default function Experiencie() {
               />
               <div className="flex w-full flex-col gap-0.5">
                 <div className="flex w-full flex-wrap items-center gap-x-2">
-                  <h3 className="leading-none font-semibold">{event.role}</h3>
+                  <h3 className="leading-none font-semibold text-gray-300">{event.role}</h3>
                   {event.link ? (
                     <a
                       href={event.link}
@@ -58,10 +58,10 @@ export default function Experiencie() {
           </AccordionTrigger>
 
           <AccordionContent className="pl-[40px]">
-            <p className="mb-3 text-sm whitespace-pre-line text-gray-400">{event.summary}</p>
+            <p className="mb-3 text-sm whitespace-pre-line text-gray-300">{event.summary}</p>
 
             <h4 className="mt-2 mb-1 text-sm font-semibold text-gray-200">Responsabilidades</h4>
-            <ul className="mb-3 list-outside list-disc pl-6.5 text-sm text-gray-400 marker:text-sm">
+            <ul className="mb-3 list-outside list-disc pl-6.5 text-sm text-gray-300 marker:text-sm">
               {event.responsibilities.map((r, i) => (
                 <li key={i}>{r}</li>
               ))}
@@ -70,28 +70,28 @@ export default function Experiencie() {
             {event.projects?.length > 0 && (
               <>
                 <h4 className="mt-2 mb-1 text-sm font-semibold text-gray-200">Proyectos</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
+                <ul className="space-y-2 text-sm">
                   {event.projects.map((p, i) => (
-                    <li key={i}>
-                      <span className="font-medium text-gray-300">{p.name}</span>: {p.description}
+                    <li key={i} className="text-gray-300">
+                      <span className="font-medium text-gray-200">{p.name}</span>: {p.description}
                     </li>
                   ))}
                 </ul>
               </>
             )}
 
-            {event.achievements?.length > 0 && (
+            {/* {event.achievements?.length > 0 && (
               <>
                 <h4 className="mt-3 mb-1 text-sm font-semibold text-gray-200">Logros</h4>
-                <ul className="mb-3 list-outside list-disc pl-6.5 text-sm text-gray-400 marker:text-sm">
+                <ul className="mb-3 list-outside list-disc pl-6.5 text-sm text-gray-300 marker:text-sm">
                   {event.achievements.map((a, i) => (
                     <li key={i}>{a}</li>
                   ))}
                 </ul>
               </>
-            )}
+            )} */}
 
-            <div className="mt-8 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2">
               {event.tags.map((tag, i) => (
                 <span
                   key={i}

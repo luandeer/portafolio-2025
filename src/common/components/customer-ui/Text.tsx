@@ -4,8 +4,8 @@ import { cva, type VariantProps } from 'class-variance-authority';
 const textVariants = cva('text-gray-300', {
   variants: {
     variant: {
-      body: 'text-base',
-      small: 'text-sm leading-snug text-gray-300',
+      body: 'text-base leading-snug',
+      small: 'text-sm leading-snug ',
       caption: 'text-xs leading-tight opacity-80',
       overline: 'text-[11px] uppercase tracking-widest font-semibold opacity-70',
       code: 'font-mono text-sm bg-gray-800 px-1 py-0.5 rounded',
