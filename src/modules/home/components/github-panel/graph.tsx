@@ -13,7 +13,7 @@ import {
   ContributionGraphLegend,
   ContributionGraphTotalCount,
 } from '@/common/components/customer-ui/contribution-graph';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/common/components/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/common/components/shadcn-ui/tooltip';
 import { GITHUB_USERNAME } from '../../constants/site';
 
 export function GitHubContributionGraph({ contributions }: { contributions: Promise<Activity[]> }) {
@@ -21,7 +21,7 @@ export function GitHubContributionGraph({ contributions }: { contributions: Prom
 
   return (
     <ContributionGraph
-      className="w-full py-2"
+      className="w-full"
       data={data}
       blockSize={11}
       blockMargin={3}

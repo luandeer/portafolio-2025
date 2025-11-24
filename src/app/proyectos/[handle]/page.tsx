@@ -1,4 +1,4 @@
-import { Badge } from '@/common/components/ui/badge';
+import { Badge } from '@/common/components/shadcn-ui/badge';
 import projects from '@/common/data/Proyectos';
 import { ArrowLeft, ExternalLink, Github, Globe, Layers } from 'lucide-react';
 import Image from 'next/image';

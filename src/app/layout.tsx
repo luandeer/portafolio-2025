@@ -1,6 +1,6 @@
 import Footer from '@/common/components/footer/Footer';
 import { Header } from '@/common/components/header/Header';
-import { TooltipProvider } from '@/common/components/ui/tooltip';
+import { TooltipProvider } from '@/common/components/shadcn-ui/tooltip';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';

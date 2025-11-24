@@ -18,26 +18,24 @@ export default function Education() {
 
   return (
     <div>
-      <div>
-        {events.map((event, index) => (
-          <div key={index} className="py-2">
-            <div className="flex items-start gap-3 text-sm md:text-base">
-              <Image
-                src={event.image}
-                alt={event.title}
-                className="h-auto w-[30px] rounded-xs object-cover"
-                width={30}
-                height={30}
-              />
-              <div className="flex flex-col">
-                <h3 className="mb-1 text-xs text-gray-300">{event.year}</h3>
-                <h3>{event.title}</h3>
-                <p className="text-sm text-gray-300">{event.description}</p>
-              </div>
+      {events.map((event, index) => (
+        <div key={index} className="py-2">
+          <div className="flex items-start gap-3 text-sm md:text-base">
+            <Image
+              src={event.image}
+              alt={event.title}
+              className="h-auto w-[30px] rounded-xs object-cover"
+              width={30}
+              height={30}
+            />
+            <div className="flex flex-col">
+              <h3 className="mb-1 text-xs text-gray-300">{event.year}</h3>
+              <h3>{event.title}</h3>
+              <p className="text-sm text-gray-300">{event.description}</p>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -2,7 +2,7 @@
 import { Download } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Button } from '../ui/button';
+import { Button } from '../shadcn-ui/button';
 import {
   Sheet,
   SheetContent,
@@ -11,7 +11,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '../ui/sheet';
+} from '../shadcn-ui/sheet';
 import { NavLinks } from './Nav';
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +19,10 @@ export const Header = () => {
   // Función para cerrar el modal
   const closeModal = () => setIsOpen(false);
   return (
-    <header className="sticky top-0 z-40 w-full bg-neutral-950/40 px-4 py-4 text-white backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/40 px-4 py-4 text-white backdrop-blur-xs">
       <div className="mx-auto flex max-w-[740px] items-center justify-between">
         <Link href="/">@alexanderpreg</Link>
-        <div className="flex items-center gap-2 sm:gap-6">
+        <div className="flex items-center gap-3 sm:gap-6">
           <nav className="hidden md:block">
             <NavLinks />
           </nav>
@@ -33,7 +33,8 @@ export const Header = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-1 rounded-md border border-gray-600 bg-gradient-to-b from-gray-500/20 to-gray-500/10 px-2 py-0.5 text-sm text-gray-400 hover:bg-slate-900"
           >
-            <Download className="size-4" /> CV
+            CV
+            <Download className="size-4" />
           </Link>
           <div className="block md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>

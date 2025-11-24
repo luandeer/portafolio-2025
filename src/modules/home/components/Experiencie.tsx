@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/common/components/ui/accordion';
+} from '@/common/components/shadcn-ui/accordion';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import events from '../data/experienceData.json';
@@ -19,11 +19,9 @@ export default function Experiencie() {
           value={`item-${index}`}
           className="group relative border-b-0 last:overflow-hidden"
         >
-          {/* Línea vertical */}
           <div
             className={cn(
-              'absolute top-[30px] left-[14px] h-full w-[1px] bg-gray-800',
-              // el último ítem solo la muestra cuando está abierto
+              'absolute top-[30px] left-[14px] h-full w-px bg-neutral-800',
               index === events.length - 1 &&
                 'group-data-[state=closed]:w-0 group-data-[state=closed]:opacity-0'
             )}

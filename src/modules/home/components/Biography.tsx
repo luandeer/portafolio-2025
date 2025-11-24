@@ -1,4 +1,4 @@
-import { Globe, GraduationCap, Mail } from 'lucide-react';
+import { Globe, Luggage, Mail, MapPin } from 'lucide-react';
 
 export default function Biography() {
   const events = [
@@ -6,14 +6,15 @@ export default function Biography() {
     //   icon: <Code2 className="size-4 text-gray-300" />,
     //   description: 'Software Engineering & Full Stack Developer',
     // },
-    // {
-    //   icon: <MapPin className="size-4 text-gray-300" />,
-    //   description: 'Lima, Perú.',
-    // },
     {
-      icon: <GraduationCap className="size-4 text-gray-300" />,
-      description: 'Graduado en Ingeniería de Software (UNMSM)',
+      icon: <MapPin className="size-4 text-gray-300" />,
+      description: 'Lima, Perú.',
     },
+
+    // {
+    //   icon: <GraduationCap className="size-4 text-gray-300" />,
+    //   description: 'Graduado en Ingeniería de Software (UNMSM)',
+    // },
     {
       icon: <Mail className="size-4 text-gray-300" />,
       description: 'alexanderperezreginaldo@gmail.com',
@@ -22,6 +23,10 @@ export default function Biography() {
     {
       icon: <Globe className="size-4 text-gray-300" />,
       description: 'telmoalexander.com',
+    },
+    {
+      icon: <Luggage className="size-4 text-gray-300" />,
+      description: 'Disponible (pero con café ☕)',
     },
   ];
 
@@ -32,7 +37,7 @@ export default function Biography() {
           <div className="flex aspect-square w-7 items-center justify-center rounded-md border border-gray-400/30 bg-gradient-to-b from-gray-500/20 to-gray-500/10">
             {event.icon}
           </div>
-          <div className="text-sm leading-tight font-normal text-gray-300">{event.description}</div>
+          <div className="leading-tight font-normal text-gray-300">{event.description}</div>
         </div>
       ))}
     </div>

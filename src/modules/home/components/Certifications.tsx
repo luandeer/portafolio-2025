@@ -1,14 +1,14 @@
 'use client';
 
-import { Button } from '@/common/components/ui/button';
-import { Carousel, CarouselContent, CarouselItem } from '@/common/components/ui/carousel';
+import { Button } from '@/common/components/shadcn-ui/button';
+import { Carousel, CarouselContent, CarouselItem } from '@/common/components/shadcn-ui/carousel';
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/common/components/ui/dialog';
+} from '@/common/components/shadcn-ui/dialog';
 import { CertificationsData } from '@/common/data/Certifications';
 import { cn } from '@/lib/utils';
 import Autoscroll from 'embla-carousel-auto-scroll';
@@ -117,16 +117,6 @@ export const CarouselCertifications = () => {
                         <div className="mt-1">{selectedCertificate.type}</div>
                       </div>
                     </div>
-
-                    {/* <div className="mt-6 pt-6 border-t">
-								<Button
-									className="w-full"
-									onClick={() => window.open(imageUrl, '_blank')}
-								>
-									<Download className="mr-2 h-4 w-4" />
-									Descargar Certificado
-								</Button>
-							</div> */}
                   </div>
                 </div>
               </div>

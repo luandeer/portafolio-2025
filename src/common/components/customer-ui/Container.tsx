@@ -1,0 +1,23 @@
+import { cn } from '@/lib/utils';
+import { cva } from 'class-variance-authority';
+
+const containerVariants = cva('w-full', {
+  variants: {
+    size: {
+      container: 'max-w-[740px] px-4  2xl:px-0 mx-auto',
+      full: 'max-w-screen',
+    },
+  },
+  defaultVariants: {
+    size: 'container',
+  },
+});
+
+interface ContainerProps extends React.HTMLAttributes<HTMLElement> {
+  as?: keyof HTMLElementTagNameMap;
+  size?: 'container' | 'full';
+}
+
+export function Container({ as: Tag = 'div', size, className, ...props }: ContainerProps) {
+  return <Tag className={cn(containerVariants({ size }), className)} {...props} />;
+}

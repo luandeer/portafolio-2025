@@ -1,7 +1,8 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import { useEffect, useRef } from 'react';
-import styles from './mario-banner.module.css';
+import styles from '../../style/mario-banner.module.css';
 
 export default function MarioBanner() {
   const luigiRef = useRef<HTMLDivElement>(null);
@@ -60,7 +61,7 @@ export default function MarioBanner() {
   }, []);
 
   return (
-    <div className={styles.banner}>
+    <div className={cn('mb-6!', styles.banner)}>
       {/* Sky with clouds */}
       <div className={styles.sky}>
         <div className={`${styles.cloud} ${styles.cloud1}`}></div>
@@ -154,11 +155,6 @@ export default function MarioBanner() {
         <div className={styles.yoshiLegRight}></div>
         <div className={styles.yoshiArmLeft}></div>
       </div>
-
-      {/* Welcome Text */}
-      {/* <div className={styles.welcomeText}>
-				<h1>¡Bienvenidos a este espacio!</h1>
-			</div> */}
     </div>
   );
 }

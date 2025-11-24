@@ -19,7 +19,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@shadcnui/*": ["./src/common/components/shadcn-ui/*"],
+      "@common/*": ["./src/common/*"],
+      "@public/*": ["./public/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@auth": ["./auth"]
     }
   },
   "include": [
