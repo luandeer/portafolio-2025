@@ -3,12 +3,12 @@ import type { ReactNode } from 'react';
 interface SocialLinkCardProps {
   id: string;
   name: string;
-  handle: string;
+  handle?: string;
   icon: ReactNode;
   url: string;
 }
 
-export function SocialLinkCard({ name, handle, icon, url }: SocialLinkCardProps) {
+export function SocialLinkCard({ name, icon, url }: SocialLinkCardProps) {
   return (
     <a
       href={url}
