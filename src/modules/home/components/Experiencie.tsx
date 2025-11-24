@@ -67,7 +67,7 @@ export default function Experiencie() {
               ))}
             </ul>
 
-            {event.projects?.length > 0 && (
+            {/* {event.projects?.length > 0 && (
               <>
                 <h4 className="mt-2 mb-1 text-sm font-semibold text-gray-200">Proyectos</h4>
                 <ul className="space-y-2 text-sm">
@@ -78,7 +78,7 @@ export default function Experiencie() {
                   ))}
                 </ul>
               </>
-            )}
+            )} */}
 
             {/* {event.achievements?.length > 0 && (
               <>
